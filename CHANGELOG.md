@@ -1,3 +1,10 @@
+## [1.3.2](https://github.com/react-hookz/eslint-config/compare/v1.3.1...v1.3.2) (2022-01-12)
+
+
+### Bug Fixes
+
+* further improvements ([3838c99](https://github.com/react-hookz/eslint-config/commit/3838c991b1cb4622da240265839504f9c2b167eb))
+
 ## [1.3.1](https://github.com/react-hookz/eslint-config/compare/v1.3.0...v1.3.1) (2022-01-12)
 
 
