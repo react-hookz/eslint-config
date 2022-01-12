@@ -1,3 +1,10 @@
+## [1.2.1](https://github.com/react-hookz/eslint-config/compare/v1.2.0...v1.2.1) (2022-01-12)
+
+
+### Bug Fixes
+
+* improve typescript and base configs ([408b600](https://github.com/react-hookz/eslint-config/commit/408b600c3ddb0194004745120c626c84f2930f91))
+
 # [1.2.0](https://github.com/react-hookz/eslint-config/compare/v1.1.1...v1.2.0) (2022-01-12)
 
 
