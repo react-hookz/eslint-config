@@ -1,3 +1,10 @@
+## [1.1.1](https://github.com/react-hookz/eslint-config/compare/v1.1.0...v1.1.1) (2022-01-12)
+
+
+### Bug Fixes
+
+* move eslint-plugin-unicorn to dependencies ([7fbd064](https://github.com/react-hookz/eslint-config/commit/7fbd0643f2f6b43039bd26cf02faa420b5b4c7eb))
+
 # [1.1.0](https://github.com/react-hookz/eslint-config/compare/v1.0.1...v1.1.0) (2022-01-12)
 
 
