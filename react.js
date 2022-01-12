@@ -1,43 +1,30 @@
+const tsConfig = require('./typescript');
+
 module.exports = {
-  parser: '@typescript-eslint/parser',
+  extends: [
+    './base',
+    './typescript',
+    'airbnb',
+    'airbnb-typescript',
+    'plugin:@typescript-eslint/recommended',
+    'plugin:@typescript-eslint/recommended-requiring-type-checking',
+    'plugin:eslint-comments/recommended',
+    'plugin:promise/recommended',
+    'plugin:unicorn/recommended',
+    'plugin:prettier/recommended',
+  ],
+
+  plugins: ['react-hooks'],
+
   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
     ecmaFeatures: {
       jsx: true,
     },
   },
-  env: {
-    commonjs: true,
-    node: true,
-    browser: true,
-    es6: true,
-    jest: true,
-  },
-
-  extends: ['./base', './typescript', 'airbnb-typescript', 'prettier'],
-  plugins: ['@typescript-eslint', 'prettier', 'react'],
 
   rules: {
-    'no-console': 'off',
-    'import/prefer-default-export': 'off',
-    '@typescript-eslint/no-explicit-any': 'off',
-    'react/jsx-filename-extension': [
-      'error',
-      {
-        extensions: ['.js', '.jsx', '.tx', '.tsx'],
-      },
-    ],
-
-    'import/extensions': [
-      'error',
-      'ignorePackages',
-      {
-        js: 'never',
-        jsx: 'never',
-        ts: 'never',
-        tsx: 'never',
-      },
-    ],
+    ...tsConfig.rules,
+    'react-hooks/rules-of-hooks': 'error',
+    'react-hooks/exhaustive-deps': 'warn',
   },
 };

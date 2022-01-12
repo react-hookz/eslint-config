@@ -1,9 +1,5 @@
 module.exports = {
   parser: '@typescript-eslint/parser',
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-  },
 
   env: {
     commonjs: true,
@@ -23,14 +19,36 @@ module.exports = {
     'plugin:unicorn/recommended',
     'plugin:prettier/recommended',
   ],
-
-  plugins: ['@typescript-eslint'],
   rules: {
+    'eslint-comments/disable-enable-pair': 'off',
+
     'import/prefer-default-export': 'off',
     'import/no-default-export': 'error',
-    'no-use-before-define': ['error', { functions: false, classes: true, variables: true }],
+    'import/no-extraneous-dependencies': [
+      'error',
+      {
+        devDependencies: true,
+        optionalDependencies: true,
+        peerDependencies: true,
+      },
+    ],
+
     'unicorn/prevent-abbreviations': 'off',
     'unicorn/no-array-for-each': 'off',
+    'unicorn/no-null': 'off',
+    'unicorn/no-for-loop': 'off',
+    'unicorn/filename-case': [
+      'error',
+      {
+        cases: {
+          camelCase: true,
+          pascalCase: true,
+          kebabCase: true,
+        },
+      },
+    ],
+
+    '@typescript-eslint/no-unused-vars': ['error', { argsIgnorePattern: '^_' }],
     '@typescript-eslint/explicit-function-return-type': 'off',
     '@typescript-eslint/no-use-before-define': [
       'error',

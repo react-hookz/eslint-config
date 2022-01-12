@@ -26,11 +26,36 @@ module.exports = {
         arrowParens: 'always',
       },
     ],
+    'no-use-before-define': ['error', { functions: false, classes: true, variables: true }],
+    'no-plusplus': 'off',
+
+    'eslint-comments/disable-enable-pair': 'off',
+
     'import/prefer-default-export': 'off',
     'import/no-default-export': 'error',
-    'no-use-before-define': ['error', { functions: false, classes: true, variables: true }],
+    'import/no-extraneous-dependencies': [
+      'error',
+      {
+        devDependencies: true,
+        optionalDependencies: true,
+        peerDependencies: true,
+      },
+    ],
+
     'unicorn/prevent-abbreviations': 'off',
     'unicorn/no-array-for-each': 'off',
+    'unicorn/no-null': 'off',
+    'unicorn/no-for-loop': 'off',
+    'unicorn/filename-case': [
+      'error',
+      {
+        cases: {
+          camelCase: true,
+          pascalCase: true,
+          kebabCase: true,
+        },
+      },
+    ],
   },
   overrides: [
     {
