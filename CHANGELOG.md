@@ -1,3 +1,15 @@
+# [1.1.0](https://github.com/react-hookz/eslint-config/compare/v1.0.1...v1.1.0) (2022-01-12)
+
+
+### Bug Fixes
+
+* improve distribution packaging via .npmignore ([1b0633f](https://github.com/react-hookz/eslint-config/commit/1b0633f37086e64aeedd280e89ae571788567923))
+
+
+### Features
+
+* improvements on linting along with new lint plugins ([ef9cc38](https://github.com/react-hookz/eslint-config/commit/ef9cc3863ec8f5f4dea5956aa0a7ec0ccac449ce))
+
 ## [1.0.1](https://github.com/react-hookz/eslint-config/compare/v1.0.0...v1.0.1) (2022-01-11)
 
 
