@@ -1,3 +1,10 @@
+# [1.3.0](https://github.com/react-hookz/eslint-config/compare/v1.2.1...v1.3.0) (2022-01-12)
+
+
+### Features
+
+* add eslint-plugin-react-hooks ([1dae2a4](https://github.com/react-hookz/eslint-config/commit/1dae2a4572a4f2aa3a0c3a8c22dd26db8d3d48e7))
+
 ## [1.2.1](https://github.com/react-hookz/eslint-config/compare/v1.2.0...v1.2.1) (2022-01-12)
 
 
