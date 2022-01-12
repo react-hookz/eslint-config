@@ -26,5 +26,8 @@ module.exports = {
     ...tsConfig.rules,
     'react-hooks/rules-of-hooks': 'error',
     'react-hooks/exhaustive-deps': 'warn',
+    'react/function-component-definition': ['error', { namedComponents: 'arrow-function' }],
   },
+
+  overrides: [...tsConfig.overrides],
 };

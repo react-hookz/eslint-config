@@ -28,6 +28,7 @@ module.exports = {
     ],
     'no-use-before-define': ['error', { functions: false, classes: true, variables: true }],
     'no-plusplus': 'off',
+    'consistent-return': 'off',
 
     'eslint-comments/disable-enable-pair': 'off',
 
@@ -42,6 +43,8 @@ module.exports = {
       },
     ],
 
+    'unicorn/no-lonely-if': 'off',
+    'unicorn/explicit-length-check': 'off',
     'unicorn/prevent-abbreviations': 'off',
     'unicorn/no-array-for-each': 'off',
     'unicorn/no-null': 'off',
@@ -54,6 +57,7 @@ module.exports = {
           pascalCase: true,
           kebabCase: true,
         },
+        ignore: ['(..md)'],
       },
     ],
   },

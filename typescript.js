@@ -1,3 +1,5 @@
+const baseConfig = require('./base');
+
 module.exports = {
   parser: '@typescript-eslint/parser',
 
@@ -20,33 +22,7 @@ module.exports = {
     'plugin:prettier/recommended',
   ],
   rules: {
-    'eslint-comments/disable-enable-pair': 'off',
-
-    'import/prefer-default-export': 'off',
-    'import/no-default-export': 'error',
-    'import/no-extraneous-dependencies': [
-      'error',
-      {
-        devDependencies: true,
-        optionalDependencies: true,
-        peerDependencies: true,
-      },
-    ],
-
-    'unicorn/prevent-abbreviations': 'off',
-    'unicorn/no-array-for-each': 'off',
-    'unicorn/no-null': 'off',
-    'unicorn/no-for-loop': 'off',
-    'unicorn/filename-case': [
-      'error',
-      {
-        cases: {
-          camelCase: true,
-          pascalCase: true,
-          kebabCase: true,
-        },
-      },
-    ],
+    ...baseConfig.rules,
 
     '@typescript-eslint/no-unused-vars': ['error', { argsIgnorePattern: '^_' }],
     '@typescript-eslint/explicit-function-return-type': 'off',
@@ -56,12 +32,12 @@ module.exports = {
     ],
   },
   overrides: [
+    ...baseConfig.overrides,
     {
       files: ['*.js'],
       rules: {
         // Allow CJS until ESM support improves
         '@typescript-eslint/no-var-requires': 'off',
-        'unicorn/prefer-module': 'off',
       },
     },
   ],
