@@ -37,7 +37,6 @@ module.exports = {
       files: ['*.js'],
       rules: {
         // Allow CJS until ESM support improves
-        '@typescript-eslint/no-var-requires': 'off',
         'unicorn/prefer-module': 'off',
       },
     },
