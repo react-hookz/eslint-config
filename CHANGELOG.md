@@ -1,3 +1,10 @@
+## [1.3.4](https://github.com/react-hookz/eslint-config/compare/v1.3.3...v1.3.4) (2022-01-13)
+
+
+### Bug Fixes
+
+* improve mdx config ([d0e5ad1](https://github.com/react-hookz/eslint-config/commit/d0e5ad18eb5d98fc49beff8ddc59f16f6dc89730))
+
 ## [1.3.3](https://github.com/react-hookz/eslint-config/compare/v1.3.2...v1.3.3) (2022-01-13)
 
 
