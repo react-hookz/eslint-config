@@ -43,6 +43,8 @@ module.exports = {
       },
     ],
 
+    'promise/always-return': 'off',
+
     'unicorn/no-lonely-if': 'off',
     'unicorn/explicit-length-check': 'off',
     'unicorn/prevent-abbreviations': 'off',
