@@ -11,21 +11,7 @@ module.exports = {
     sourceType: 'module',
   },
   rules: {
-    'prettier/prettier': [
-      'error',
-      {
-        printWidth: 100,
-        tabs: false,
-        semi: true,
-        singleQuote: true,
-        trailingComma: 'es5',
-        endOfLine: 'lf',
-        tabWidth: 2,
-        bracketSpacing: true,
-        bracketSameLine: true,
-        arrowParens: 'always',
-      },
-    ],
+    'prettier/prettier': ['error'],
     'no-use-before-define': ['error', { functions: false, classes: true, variables: true }],
     'no-plusplus': 'off',
     'consistent-return': 'off',
