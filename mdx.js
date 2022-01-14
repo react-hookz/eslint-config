@@ -1,17 +1,3 @@
-const prettierCfg = {
-  printWidth: 100,
-  tabs: false,
-  semi: true,
-  singleQuote: true,
-  trailingComma: 'es5',
-  endOfLine: 'lf',
-  tabWidth: 2,
-  bracketSpacing: true,
-  bracketSameLine: true,
-  arrowParens: 'always',
-  proseWrap: 'always',
-};
-
 module.exports = {
   extends: ['plugin:mdx/recommended', 'plugin:prettier/recommended'],
 
@@ -32,7 +18,6 @@ module.exports = {
     'prettier/prettier': [
       'error',
       {
-        ...prettierCfg,
         parser: 'mdx',
       },
     ],
@@ -45,7 +30,6 @@ module.exports = {
         'prettier/prettier': [
           'error',
           {
-            ...prettierCfg,
             parser: 'markdown',
           },
         ],
