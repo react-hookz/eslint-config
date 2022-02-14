@@ -46,7 +46,7 @@
     "commitlint": "^16.1.0",
     "eslint-plugin-react-hooks": "^4.3.0",
     "husky": "^7.0.4",
-    "lint-staged": "^12.3.3",
+    "lint-staged": "^12.3.4",
     "semantic-release": "^19.0.2",
     "yarn": "^1.22.17"
   },
