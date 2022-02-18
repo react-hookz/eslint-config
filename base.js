@@ -15,6 +15,7 @@ module.exports = {
     'no-use-before-define': ['error', { functions: false, classes: true, variables: true }],
     'no-plusplus': 'off',
     'consistent-return': 'off',
+    'no-underscore-dangle': ['error', { allowFunctionParams: true }],
 
     'eslint-comments/disable-enable-pair': 'off',
 
