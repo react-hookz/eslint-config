@@ -1,3 +1,10 @@
+# [1.5.0](https://github.com/react-hookz/eslint-config/compare/v1.4.0...v1.5.0) (2022-02-18)
+
+
+### Features
+
+* allow underscored function parameters ([d98506b](https://github.com/react-hookz/eslint-config/commit/d98506b068123ba6719784ed48668358daeda26a))
+
 # [1.4.0](https://github.com/react-hookz/eslint-config/compare/v1.3.4...v1.4.0) (2022-01-14)
 
 
