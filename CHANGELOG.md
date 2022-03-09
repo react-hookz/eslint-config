@@ -1,3 +1,10 @@
+# [1.6.0](https://github.com/react-hookz/eslint-config/compare/v1.5.1...v1.6.0) (2022-03-09)
+
+
+### Features
+
+* further configuration ([a049139](https://github.com/react-hookz/eslint-config/commit/a0491392924fe3b9d86a7493b13fbcb06f730e37))
+
 ## [1.5.1](https://github.com/react-hookz/eslint-config/compare/v1.5.0...v1.5.1) (2022-03-09)
 
 
