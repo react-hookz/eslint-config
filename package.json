@@ -1,6 +1,6 @@
 {
   "name": "@react-hookz/eslint-config",
-  "version": "1.5.0",
+  "version": "1.5.1",
   "description": "eslint configuration files used in @react-hookz projects",
   "license": "MIT",
   "repository": {

@@ -1,3 +1,10 @@
+## [1.5.1](https://github.com/react-hookz/eslint-config/compare/v1.5.0...v1.5.1) (2022-03-09)
+
+
+### Bug Fixes
+
+* move `eslint-plugin-react-hooks` to dependencies ([6ad0b29](https://github.com/react-hookz/eslint-config/commit/6ad0b297cf9a70f1c232e08604bd1ff6f503c9c7))
+
 # [1.5.0](https://github.com/react-hookz/eslint-config/compare/v1.4.0...v1.5.0) (2022-02-18)
 
 
