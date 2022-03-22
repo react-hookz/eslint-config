@@ -2195,12 +2195,12 @@ eslint-plugin-markdown@^2.2.1:
   dependencies:
     mdast-util-from-markdown "^0.8.5"
 
-eslint-plugin-mdx@^1.16.0:
-  version "1.16.0"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-mdx/-/eslint-plugin-mdx-1.16.0.tgz#16471df68e5ac4095e47eb1a3cd9444676e00ecf"
-  integrity sha512-p5S6+UZMt+9Xa4fJNaBcldO3gHkDwoPMFM6417PfggPlbai8mWbrSEehZU6o3vZ2Lg/WQfVXYic35VYycYqJDA==
+eslint-plugin-mdx@^1.17.0:
+  version "1.17.0"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-mdx/-/eslint-plugin-mdx-1.17.0.tgz#be00f9193e92d595b8869a7e1bf3716edf1dbe9e"
+  integrity sha512-Kicizy+fbfsB2UxTDXP92qTtFqITApu4v4DRQUfXMoPwBHeQRvZnaEtXu2S9aia51GYRYsMSqUvoPPih/5oB+g==
   dependencies:
-    eslint-mdx "^1.16.0"
+    eslint-mdx "^1.17.0"
     eslint-plugin-markdown "^2.2.1"
     synckit "^0.4.1"
     tslib "^2.3.1"
