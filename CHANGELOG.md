@@ -1,3 +1,10 @@
+## [1.6.1](https://github.com/react-hookz/eslint-config/compare/v1.6.0...v1.6.1) (2022-05-11)
+
+
+### Bug Fixes
+
+* update deps ([995680a](https://github.com/react-hookz/eslint-config/commit/995680afb059ca9f2975283887d4dbc5006b44c9))
+
 # [1.6.0](https://github.com/react-hookz/eslint-config/compare/v1.5.1...v1.6.0) (2022-03-09)
 
 
