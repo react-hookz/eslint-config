@@ -47,7 +47,7 @@
     "commitlint": "^17.0.2",
     "husky": "^8.0.1",
     "lint-staged": "^13.0.1",
-    "semantic-release": "^19.0.2",
+    "semantic-release": "^19.0.3",
     "yarn": "^1.22.19"
   },
   "scripts": {
