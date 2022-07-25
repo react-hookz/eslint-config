@@ -573,10 +573,10 @@
   dependencies:
     "@octokit/openapi-types" "^12.7.0"
 
-"@pkgr/utils@^2.1.0":
-  version "2.2.0"
-  resolved "https://registry.yarnpkg.com/@pkgr/utils/-/utils-2.2.0.tgz#ccbf06cd010684b477dde40ec833a28f0c2136c4"
-  integrity sha512-/+EeY/T/NLCfF4rvgUetl7ERNwoPz5q/p+8CYeAIFblsKSQbVJjmMccs/Y7CsOPv47hXcBrhk5IqOf9AqRNfhg==
+"@pkgr/utils@^2.3.0":
+  version "2.3.0"
+  resolved "https://registry.yarnpkg.com/@pkgr/utils/-/utils-2.3.0.tgz#3b8491f112a80839450498816767eb03b7db6139"
+  integrity sha512-7dIJ9CRVzBnqyEl7diUHPUFJf/oty2SeoVzcMocc5PeOUDK9KGzvgIBjGRRzzlRDaOjh3ADwH0WeibQvi3ls2Q==
   dependencies:
     cross-spawn "^7.0.3"
     is-glob "^4.0.3"
@@ -902,10 +902,10 @@ acorn-walk@^8.1.1:
   resolved "https://registry.yarnpkg.com/acorn-walk/-/acorn-walk-8.2.0.tgz#741210f2e2426454508853a2f44d0ab83b7f69c1"
   integrity sha512-k+iyHEuPgSw6SbuDpGQM+06HQUa04DZ3o+F6CSzXMvvI5KMvnaEqXe+YVe555R9nn6GPt404fos4wcgpw12SDA==
 
-acorn@^8.0.0, acorn@^8.4.1, acorn@^8.7.1:
-  version "8.7.1"
-  resolved "https://registry.yarnpkg.com/acorn/-/acorn-8.7.1.tgz#0197122c843d1bf6d0a5e83220a788f278f63c30"
-  integrity sha512-Xx54uLJQZ19lKygFXOWsscKUbsBZW0CPykPhVQdhIeIwrbPmJzqeASDInc8nKBnp/JT6igTs82qPXz069H8I/A==
+acorn@^8.0.0, acorn@^8.4.1, acorn@^8.7.1, acorn@^8.8.0:
+  version "8.8.0"
+  resolved "https://registry.yarnpkg.com/acorn/-/acorn-8.8.0.tgz#88c0187620435c7f6015803f5539dae05a9dbea8"
+  integrity sha512-QOxyigPVrpZ2GXT+PFyZTl6TtOFc5egxHIP9IlQ+RbupQuX4RkT/Bee4/kQuC02Xkzg84JcT7oLYtDIQxp+v7w==
 
 agent-base@6, agent-base@^6.0.2:
   version "6.0.2"
@@ -2002,20 +2002,24 @@ eslint-import-resolver-node@^0.3.6:
     debug "^3.2.7"
     resolve "^1.20.0"
 
-eslint-mdx@^2.0.0, eslint-mdx@^2.0.1:
-  version "2.0.1"
-  resolved "https://registry.yarnpkg.com/eslint-mdx/-/eslint-mdx-2.0.1.tgz#c443943eba275fafbfe15ecd0dfd44c739699dca"
-  integrity sha512-25qjdxWQGDX0zXxnZGfqwEbWjUuY1eCnK7CIq3fNE+5rWSAeleJ/i0nLKcgh6XrvmxKn6ZYcJ9msdeqmL4kPMQ==
+eslint-mdx@^2.0.1, eslint-mdx@^2.0.2:
+  version "2.0.2"
+  resolved "https://registry.yarnpkg.com/eslint-mdx/-/eslint-mdx-2.0.2.tgz#ef7db81517459517f5f63b170c05ece10f59426f"
+  integrity sha512-MEVpk4Up8DNvabR9chGE2sKhInmSgSdtqEW9CueYTExZB0t+qaT3KGctbDjbcD5YkDbvYhgSCYo/J72ncIPIbw==
   dependencies:
+    acorn "^8.8.0"
+    acorn-jsx "^5.3.2"
     cosmiconfig "^7.0.1"
+    espree "^9.3.2"
     estree-util-visit "^1.1.0"
     remark-mdx "^2.1.2"
     remark-parse "^10.0.1"
     remark-stringify "^10.0.2"
-    synckit "^0.7.1"
+    synckit "^0.8.1"
     tslib "^2.4.0"
     unified "^10.1.2"
     unist-util-visit "^4.1.0"
+    uvu "^0.5.6"
     vfile "^5.3.4"
 
 eslint-module-utils@^2.7.3:
@@ -5747,12 +5751,12 @@ supports-preserve-symlinks-flag@^1.0.0:
   resolved "https://registry.yarnpkg.com/supports-preserve-symlinks-flag/-/supports-preserve-symlinks-flag-1.0.0.tgz#6eda4bd344a3c94aea376d4cc31bc77311039e09"
   integrity sha512-ot0WnXS9fgdkgIcePe6RHNk1WA8+muPa6cSjeR3V8K27q9BB1rTE3R1p7Hv0z1ZyAc8s6Vvv8DIyWf681MAt0w==
 
-synckit@^0.7.1:
-  version "0.7.1"
-  resolved "https://registry.yarnpkg.com/synckit/-/synckit-0.7.1.tgz#9aa3a6c81f534ef940ad22fa9a3bae116850ead8"
-  integrity sha512-Cvv0Nzgs4Z0V6761qp4CU2+C15HRmnHaDd+sAtisbOnzIZ5wgl3ne076k28cHo+oY6eN/w0RNzRrf7CJz8dWJg==
+synckit@^0.8.1:
+  version "0.8.1"
+  resolved "https://registry.yarnpkg.com/synckit/-/synckit-0.8.1.tgz#697111240114a15a393fcb92786a4218bfead47f"
+  integrity sha512-rJEeygO5PNmcZICmrgnbOd2usi5zWE1ESc0Gn5tTmJlongoU8zCTwMFQtar2UgMSiR68vK9afPQ+uVs2lURSIA==
   dependencies:
-    "@pkgr/utils" "^2.1.0"
+    "@pkgr/utils" "^2.3.0"
     tslib "^2.4.0"
 
 tar@^6.1.0, tar@^6.1.11, tar@^6.1.2:
@@ -6090,10 +6094,10 @@ util-deprecate@^1.0.1, util-deprecate@~1.0.1:
   resolved "https://registry.yarnpkg.com/util-deprecate/-/util-deprecate-1.0.2.tgz#450d4dc9fa70de732762fbd2d4a28981419a0ccf"
   integrity sha1-RQ1Nyfpw3nMnYvvS1KKJgUGaDM8=
 
-uvu@^0.5.0:
-  version "0.5.3"
-  resolved "https://registry.yarnpkg.com/uvu/-/uvu-0.5.3.tgz#3d83c5bc1230f153451877bfc7f4aea2392219ae"
-  integrity sha512-brFwqA3FXzilmtnIyJ+CxdkInkY/i4ErvP7uV0DnUVxQcQ55reuHphorpF+tZoVHK2MniZ/VJzI7zJQoc9T9Yw==
+uvu@^0.5.0, uvu@^0.5.6:
+  version "0.5.6"
+  resolved "https://registry.yarnpkg.com/uvu/-/uvu-0.5.6.tgz#2754ca20bcb0bb59b64e9985e84d2e81058502df"
+  integrity sha512-+g8ENReyr8YsOc6fv/NVJs2vFdHBnBNdfE49rshrTzDWOlUx4Gq7KOS2GD8eqhy2j+Ejq29+SbKH8yjkAqXqoA==
   dependencies:
     dequal "^2.0.0"
     diff "^5.0.0"
