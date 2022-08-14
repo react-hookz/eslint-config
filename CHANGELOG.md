@@ -1,3 +1,10 @@
+# [1.7.0](https://github.com/react-hookz/eslint-config/compare/v1.6.1...v1.7.0) (2022-08-14)
+
+
+### Features
+
+* add typescript rule on variables naming ([e7c1b6f](https://github.com/react-hookz/eslint-config/commit/e7c1b6fbf18c698d65d3ede64109a1af3399e021))
+
 ## [1.6.1](https://github.com/react-hookz/eslint-config/compare/v1.6.0...v1.6.1) (2022-05-11)
 
 
