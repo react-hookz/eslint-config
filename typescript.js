@@ -34,59 +34,55 @@ module.exports = {
       { functions: false, classes: true, variables: true, typedefs: true },
     ],
 
-    rules: {
-      'react/button-has-type': 'off',
-      '@typescript-eslint/naming-convention': [
-        'error',
-        {
-          selector: 'default',
-          format: ['camelCase'],
+    '@typescript-eslint/naming-convention': [
+      'error',
+      {
+        selector: 'default',
+        format: ['camelCase'],
+      },
+      {
+        selector: 'variable',
+        format: ['PascalCase', 'camelCase', 'UPPER_CASE'],
+      },
+      {
+        selector: 'parameter',
+        format: ['camelCase'],
+        leadingUnderscore: 'allow',
+      },
+      {
+        selector: 'memberLike',
+        modifiers: ['private'],
+        format: ['camelCase'],
+        leadingUnderscore: 'require',
+      },
+      {
+        selector: 'typeLike',
+        format: ['PascalCase'],
+        custom: {
+          regex: '^[IT][A-Z]',
+          match: false,
         },
-        {
-          selector: 'variable',
-          format: ['PascalCase', 'camelCase', 'UPPER_CASE'],
-        },
-        {
-          selector: 'parameter',
-          format: ['camelCase'],
-          leadingUnderscore: 'allow',
-        },
-        {
-          selector: 'memberLike',
-          modifiers: ['private'],
-          format: ['camelCase'],
-          leadingUnderscore: 'require',
-        },
-        {
-          selector: 'typeLike',
-          format: ['PascalCase'],
-          custom: {
-            regex: '^[IT][A-Z]',
-            match: false,
-          },
-        },
-        {
-          selector: 'variable',
-          modifiers: ['destructured'],
-          format: null,
-        },
-
-        {
-          selector: [
-            'classProperty',
-            'objectLiteralProperty',
-            'typeProperty',
-            'classMethod',
-            'objectLiteralMethod',
-            'typeMethod',
-            'accessor',
-            'enumMember',
-          ],
-          format: null,
-          modifiers: ['requiresQuotes'],
-        },
-      ],
-    },
+      },
+      {
+        selector: 'variable',
+        modifiers: ['destructured'],
+        format: null,
+      },
+      {
+        selector: [
+          'classProperty',
+          'objectLiteralProperty',
+          'typeProperty',
+          'classMethod',
+          'objectLiteralMethod',
+          'typeMethod',
+          'accessor',
+          'enumMember',
+        ],
+        format: null,
+        modifiers: ['requiresQuotes'],
+      },
+    ],
   },
   overrides: [
     ...baseConfig.overrides,
