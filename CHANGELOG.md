@@ -1,3 +1,10 @@
+## [1.7.1](https://github.com/react-hookz/eslint-config/compare/v1.7.0...v1.7.1) (2022-08-15)
+
+
+### Bug Fixes
+
+* accident with hierarchy of config ([c70feb6](https://github.com/react-hookz/eslint-config/commit/c70feb642e5db4cf64fa788ecf6180ee8b045b82))
+
 # [1.7.0](https://github.com/react-hookz/eslint-config/compare/v1.6.1...v1.7.0) (2022-08-14)
 
 
