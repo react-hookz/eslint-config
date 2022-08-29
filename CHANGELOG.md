@@ -1,3 +1,10 @@
+## [1.7.3](https://github.com/react-hookz/eslint-config/compare/v1.7.2...v1.7.3) (2022-08-29)
+
+
+### Bug Fixes
+
+* update deps and regenerate lockfile ([d039399](https://github.com/react-hookz/eslint-config/commit/d039399deb8ac9b3dd0f4ef153a874904c6c0f18))
+
 ## [1.7.2](https://github.com/react-hookz/eslint-config/compare/v1.7.1...v1.7.2) (2022-08-15)
 
 
