@@ -1,6 +1,6 @@
 {
   "name": "@react-hookz/eslint-config",
-  "version": "1.7.2",
+  "version": "1.7.1",
   "description": "eslint configuration files used in @react-hookz projects",
   "license": "MIT",
   "repository": {
@@ -36,15 +36,15 @@
     "prettier": "^2.7.1"
   },
   "devDependencies": {
-    "@commitlint/cli": "^17.0.3",
+    "@commitlint/cli": "^17.1.2",
     "@commitlint/config-conventional": "^17.1.0",
-    "@commitlint/cz-commitlint": "^17.1.1",
+    "@commitlint/cz-commitlint": "^17.1.2",
     "@jamesacarr/eslint-formatter-github-actions": "^0.1.0",
     "@semantic-release/changelog": "^6.0.1",
     "@semantic-release/git": "^10.0.1",
     "@semantic-release/github": "^8.0.6",
     "commitizen": "^4.2.5",
-    "commitlint": "^17.1.1",
+    "commitlint": "^17.1.2",
     "husky": "^8.0.1",
     "lint-staged": "^13.0.3",
     "semantic-release": "^19.0.5",
