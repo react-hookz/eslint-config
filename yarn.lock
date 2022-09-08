@@ -2026,10 +2026,10 @@ eslint-import-resolver-node@^0.3.6:
     debug "^3.2.7"
     resolve "^1.20.0"
 
-eslint-mdx@^2.0.3:
-  version "2.0.3"
-  resolved "https://registry.yarnpkg.com/eslint-mdx/-/eslint-mdx-2.0.3.tgz#acf3aa9b55690be7d5489b7b8a97a44bfd302188"
-  integrity sha512-eHGJxe3jkY2NocfQ6IJGh159r2iFHHSyyBhEf9Whz3krBaF1xus/fwhLv7hy7HAu58yNkUrdrd1YSmu6cjOkXw==
+eslint-mdx@^2.0.3, eslint-mdx@^2.0.4:
+  version "2.0.4"
+  resolved "https://registry.yarnpkg.com/eslint-mdx/-/eslint-mdx-2.0.4.tgz#f3c7dfebf852e960ecc0d2f44de8fd3c9599f8eb"
+  integrity sha512-SEgeWByCKYNRSqV+FtxHIcBadW7xCDtfZVACEZgFN1woGuPbr1XQicUMHO5pE0LSSQfWNHXTXP9MCMBkRRVS4A==
   dependencies:
     acorn "^8.8.0"
     acorn-jsx "^5.3.2"
