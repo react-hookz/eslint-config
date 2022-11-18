@@ -1,3 +1,10 @@
+## [1.7.5](https://github.com/react-hookz/eslint-config/compare/v1.7.4...v1.7.5) (2022-11-18)
+
+
+### Bug Fixes
+
+* re-create yarn lock ([9c1b1ad](https://github.com/react-hookz/eslint-config/commit/9c1b1ad7b2eca5a677c4c2f6da4db50d2e36485e))
+
 ## [1.7.4](https://github.com/react-hookz/eslint-config/compare/v1.7.3...v1.7.4) (2022-10-18)
 
 
