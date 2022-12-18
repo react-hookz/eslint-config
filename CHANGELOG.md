@@ -1,3 +1,10 @@
+## [1.7.6](https://github.com/react-hookz/eslint-config/compare/v1.7.5...v1.7.6) (2022-12-18)
+
+
+### Bug Fixes
+
+* **docs:** update link to GHA actions badge ([25291e4](https://github.com/react-hookz/eslint-config/commit/25291e403fcda420554a6bcf6caa7835620cbf12))
+
 ## [1.7.5](https://github.com/react-hookz/eslint-config/compare/v1.7.4...v1.7.5) (2022-11-18)
 
 
