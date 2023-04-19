@@ -24,13 +24,13 @@ jobs:
       - name: "Setup Node.js"
         uses: actions/setup-node@v3.6.0
         with:
-          node-version: 16
+          node-version: 18
 
       - name: "Install dependencies"
         run: yarn install --frozen-lockfile
 
       - name: "Lint"
-        run: yarn lint -f @jamesacarr/github-actions
+        run: yarn lint -f @react-hookz/gha
 
   dependabot-merge:
     name: "Dependabot automerge"
@@ -63,7 +63,7 @@ jobs:
       - name: "Setup Node.js"
         uses: actions/setup-node@v3.6.0
         with:
-          node-version: 16
+          node-version: 18
 
       - name: "Install dependencies"
         run: yarn install --frozen-lockfile

@@ -15,24 +15,14 @@ module.exports = {
   },
 
   rules: {
-    'prettier/prettier': [
-      'error',
-      {
-        parser: 'mdx',
-      },
-    ],
+    'prettier/prettier': ['error', { parser: 'mdx' }],
   },
 
   overrides: [
     {
       files: ['*.md'],
       rules: {
-        'prettier/prettier': [
-          'error',
-          {
-            parser: 'markdown',
-          },
-        ],
+        'prettier/prettier': ['error', { parser: 'markdown' }],
       },
     },
   ],
