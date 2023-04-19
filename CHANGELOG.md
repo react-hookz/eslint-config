@@ -1,3 +1,10 @@
+## [1.7.7](https://github.com/react-hookz/eslint-config/compare/v1.7.6...v1.7.7) (2023-04-19)
+
+
+### Bug Fixes
+
+* update dependencies ([#434](https://github.com/react-hookz/eslint-config/issues/434)) ([926f65d](https://github.com/react-hookz/eslint-config/commit/926f65d91a7eeb74fd8c81aa797bb14808f3d8ba))
+
 ## [1.7.6](https://github.com/react-hookz/eslint-config/compare/v1.7.5...v1.7.6) (2022-12-18)
 
 
