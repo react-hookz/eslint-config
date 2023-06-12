@@ -1,3 +1,10 @@
+# [1.8.0](https://github.com/react-hookz/eslint-config/compare/v1.7.7...v1.8.0) (2023-06-12)
+
+
+### Features
+
+* **mdx:** update configs on md\mdx linting ([a88efd2](https://github.com/react-hookz/eslint-config/commit/a88efd2de32cb2eedd8b56660557e8a4fcefc272))
+
 ## [1.7.7](https://github.com/react-hookz/eslint-config/compare/v1.7.6...v1.7.7) (2023-04-19)
 
 
