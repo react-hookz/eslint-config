@@ -15,9 +15,8 @@
   },
   "main": "./base.js",
   "dependencies": {
-    "@react-hookz/eslint-formatter-gha": "^1.0.1",
-    "@typescript-eslint/eslint-plugin": "^5.59.9",
-    "@typescript-eslint/parser": "^5.59.9",
+    "@typescript-eslint/eslint-plugin": "^5.59.11",
+    "@typescript-eslint/parser": "^5.59.11",
     "eslint": "^8.42.0",
     "eslint-config-airbnb": "^19.0.4",
     "eslint-config-airbnb-base": "^15.0.0",
@@ -40,6 +39,7 @@
     "@commitlint/cli": "^17.6.5",
     "@commitlint/config-conventional": "^17.6.5",
     "@commitlint/cz-commitlint": "^17.5.0",
+    "@react-hookz/eslint-formatter-gha": "^1.0.1",
     "@semantic-release/changelog": "^6.0.3",
     "@semantic-release/git": "^10.0.1",
     "@semantic-release/github": "^9.0.3",
@@ -53,7 +53,7 @@
   "scripts": {
     "prepare": "husky install",
     "commit": "git-cz",
-    "lint": "eslint . --ext .js",
+    "lint": "eslint --ext .js,.md .",
     "lint:fix": "yarn lint --fix"
   },
   "config": {
