@@ -36,7 +36,7 @@
     "prettier": "^2.8.8"
   },
   "devDependencies": {
-    "@commitlint/cli": "^17.6.5",
+    "@commitlint/cli": "^17.6.6",
     "@commitlint/config-conventional": "^17.6.5",
     "@commitlint/cz-commitlint": "^17.5.0",
     "@react-hookz/eslint-formatter-gha": "^1.0.1",
