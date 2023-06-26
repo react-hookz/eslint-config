@@ -1734,12 +1734,12 @@ commitizen@^4.0.3, commitizen@^4.3.0:
     strip-bom "4.0.0"
     strip-json-comments "3.1.1"
 
-commitlint@^17.6.5:
-  version "17.6.5"
-  resolved "https://registry.yarnpkg.com/commitlint/-/commitlint-17.6.5.tgz#ecafcc2b7c823bff1a1ad7026d9dd5c0c7989c99"
-  integrity sha512-YRpFI8ABdvh0TbR6T72HaJFDn0TQdMVGgKnv6/GFkTdYTqzGo3ItTKn2bh/sxSVy/5ziOrVVAXtCy3PEq5Vs8w==
+commitlint@^17.6.6:
+  version "17.6.6"
+  resolved "https://registry.yarnpkg.com/commitlint/-/commitlint-17.6.6.tgz#39535c407c515286900aad110d62798d507c3aa0"
+  integrity sha512-Q5M+w1nqGQSEkEW43EtPNrU+uKL2pENrJl6QigFupZ0v4AfvI8k5Q6uFgWmxlEOrSkgCYaN436Q9c9pydqyJqg==
   dependencies:
-    "@commitlint/cli" "^17.6.5"
+    "@commitlint/cli" "^17.6.6"
     "@commitlint/types" "^17.4.4"
 
 common-ancestor-path@^1.0.1:
