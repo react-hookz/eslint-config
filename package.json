@@ -50,7 +50,7 @@
 	"scripts": {
 		"prepare": "husky install",
 		"commit": "git-cz",
-		"lint": "eslint --ext .js,.md .",
+		"lint": "eslint --ext .cjs,.js,.md",
 		"lint:fix": "yarn lint --fix"
 	},
 	"config": {
@@ -59,7 +59,7 @@
 		}
 	},
 	"lint-staged": {
-		"*.js": "yarn lint:fix"
+		"*.c?js": "yarn lint:fix"
 	},
 	"release": {
 		"plugins": [
