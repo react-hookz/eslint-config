@@ -1,3 +1,3 @@
 module.exports = {
-	extends: ['./typescript.cjs', 'xo-react', 'plugin:prettier/recommended'],
+	extends: ['xo-react', 'plugin:prettier/recommended'],
 };
