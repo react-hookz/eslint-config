@@ -1,0 +1,5 @@
+.idea
+node_modules
+CHANGELOG.md
+!.eslintrc.cjs
+!.prettierrc.cjs
