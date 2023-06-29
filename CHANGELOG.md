@@ -1,3 +1,14 @@
+# [2.0.0](https://github.com/react-hookz/eslint-config/compare/v1.8.0...v2.0.0) (2023-06-29)
+
+
+* Rework configuration (#481) ([9eca2d9](https://github.com/react-hookz/eslint-config/commit/9eca2d94c4629ae39f050d862cdcda5e3c34970a)), closes [#481](https://github.com/react-hookz/eslint-config/issues/481)
+
+
+### BREAKING CHANGES
+
+* package is now ESM and using different indentation character.
+Also, during module structure - all config files now have cjs
+
 # [1.8.0](https://github.com/react-hookz/eslint-config/compare/v1.7.7...v1.8.0) (2023-06-12)
 
 
