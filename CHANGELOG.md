@@ -1,3 +1,10 @@
+## [2.0.1](https://github.com/react-hookz/eslint-config/compare/v2.0.0...v2.0.1) (2023-07-03)
+
+
+### Bug Fixes
+
+* add rules to base and react configs ([b6b4429](https://github.com/react-hookz/eslint-config/commit/b6b442977c8b1f5003d3f0dab8614040ab1e37bc))
+
 # [2.0.0](https://github.com/react-hookz/eslint-config/compare/v1.8.0...v2.0.0) (2023-06-29)
 
 
