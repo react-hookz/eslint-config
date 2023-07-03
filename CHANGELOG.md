@@ -1,3 +1,10 @@
+## [2.0.2](https://github.com/react-hookz/eslint-config/compare/v2.0.1...v2.0.2) (2023-07-03)
+
+
+### Bug Fixes
+
+* proper resolving of typescript files ([2a4bb79](https://github.com/react-hookz/eslint-config/commit/2a4bb79d1c39e2decd28e9e02c9ce72f006e2009))
+
 ## [2.0.1](https://github.com/react-hookz/eslint-config/compare/v2.0.0...v2.0.1) (2023-07-03)
 
 
