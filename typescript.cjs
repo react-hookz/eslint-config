@@ -1,5 +1,13 @@
 module.exports = {
 	extends: ['./base.cjs', 'xo-typescript', 'plugin:prettier/recommended'],
+	settings: {
+		'import/parsers': {
+			'@typescript-eslint/parser': ['.ts', '.tsx'],
+		},
+		'import/resolver': {
+			typescript: {},
+		},
+	},
 	rules: {
 		'@typescript-eslint/no-empty-function': 'off',
 		'@typescript-eslint/promise-function-async': 'off',
