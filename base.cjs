@@ -11,5 +11,8 @@ module.exports = {
 	},
 	rules: {
 		'import/no-useless-path-segments': 'error',
+
+		// Promise, if placed in the end of the chain may viable have no return statement.
+		'promise/always-return': 'off',
 	},
 };
