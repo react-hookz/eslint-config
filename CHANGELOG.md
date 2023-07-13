@@ -1,3 +1,10 @@
+## [2.0.4](https://github.com/react-hookz/eslint-config/compare/v2.0.3...v2.0.4) (2023-07-13)
+
+
+### Bug Fixes
+
+* rollback typescript plugin to previous major ([c37851c](https://github.com/react-hookz/eslint-config/commit/c37851cd6fdf05bd562cf65e45a200b867d7344c))
+
 ## [2.0.3](https://github.com/react-hookz/eslint-config/compare/v2.0.2...v2.0.3) (2023-07-13)
 
 
