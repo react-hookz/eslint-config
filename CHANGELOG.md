@@ -1,3 +1,10 @@
+## [2.0.3](https://github.com/react-hookz/eslint-config/compare/v2.0.2...v2.0.3) (2023-07-13)
+
+
+### Bug Fixes
+
+* improve react linting ([69f7153](https://github.com/react-hookz/eslint-config/commit/69f715393bdec5304994d62472457e4293140cf5))
+
 ## [2.0.2](https://github.com/react-hookz/eslint-config/compare/v2.0.1...v2.0.2) (2023-07-03)
 
 
