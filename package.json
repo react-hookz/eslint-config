@@ -40,7 +40,7 @@
 		"@react-hookz/eslint-formatter-gha": "^1.0.1",
 		"@semantic-release/changelog": "^6.0.3",
 		"@semantic-release/git": "^10.0.1",
-		"@semantic-release/github": "^9.0.3",
+		"@semantic-release/github": "^9.0.4",
 		"commitizen": "^4.3.0",
 		"commitlint": "^17.6.6",
 		"husky": "^8.0.3",
