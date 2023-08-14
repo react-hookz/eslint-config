@@ -1,3 +1,10 @@
+# [2.1.0](https://github.com/react-hookz/eslint-config/compare/v2.0.4...v2.1.0) (2023-08-14)
+
+
+### Features
+
+* add more plugins to config ([edf4077](https://github.com/react-hookz/eslint-config/commit/edf40771ecc75b987c2077ad99a84183b56d47e6))
+
 ## [2.0.4](https://github.com/react-hookz/eslint-config/compare/v2.0.3...v2.0.4) (2023-07-13)
 
 
