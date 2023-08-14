@@ -40,6 +40,14 @@ module.exports = {
 				format: ['camelCase', 'PascalCase', 'UPPER_CASE'],
 			},
 		],
+		'import/extensions': [
+			'error',
+			'ignorePackages',
+			{
+				ts: 'never',
+				tsx: 'never',
+			},
+		],
 		// Deviation from xo's config - we allow usage of null and empty array types.
 		'@typescript-eslint/ban-types': [
 			'error',

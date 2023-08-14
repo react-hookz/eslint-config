@@ -14,6 +14,105 @@ module.exports = {
 	rules: {
 		'no-use-extend-native/no-use-extend-native': 'error',
 
+		'unicorn/prevent-abbreviations': [
+			'error',
+			{
+				checkFilenames: false,
+				checkDefaultAndNamespaceImports: false,
+				checkShorthandImports: false,
+				extendDefaultReplacements: false,
+				replacements: {
+					whitelist: {
+						include: true,
+					},
+					blacklist: {
+						exclude: true,
+					},
+					master: {
+						main: true,
+					},
+					slave: {
+						secondary: true,
+					},
+					props: {
+						properties: false,
+					},
+
+					// Not part of `eslint-plugin-unicorn`
+					application: {
+						app: true,
+					},
+					applications: {
+						apps: true,
+					},
+
+					// Part of `eslint-plugin-unicorn`
+					arr: {
+						array: true,
+					},
+					e: {
+						error: true,
+						event: true,
+					},
+					el: {
+						element: true,
+					},
+					elem: {
+						element: true,
+					},
+					len: {
+						length: true,
+					},
+					msg: {
+						message: true,
+					},
+					num: {
+						number: true,
+					},
+					obj: {
+						object: true,
+					},
+					opts: {
+						options: true,
+					},
+					param: {
+						parameter: true,
+					},
+					params: {
+						parameters: true,
+					},
+					prev: {
+						previous: true,
+					},
+					req: {
+						request: true,
+					},
+					res: {
+						response: true,
+						result: true,
+					},
+					ret: {
+						returnValue: true,
+					},
+					str: {
+						string: true,
+					},
+					temp: {
+						temporary: true,
+					},
+					tmp: {
+						temporary: true,
+					},
+					val: {
+						value: true,
+					},
+					err: {
+						error: true,
+					},
+				},
+			},
+		],
+
 		'unicorn/better-regex': [
 			'error',
 			{
@@ -31,13 +130,7 @@ module.exports = {
 
 		'import/default': 'error',
 		'import/export': 'error',
-		'import/extensions': [
-			'error',
-			'always',
-			{
-				ignorePackages: true,
-			},
-		],
+		'import/extensions': ['error', 'ignorePackages'],
 		'import/first': 'error',
 
 		'import/namespace': [
