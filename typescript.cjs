@@ -40,6 +40,15 @@ module.exports = {
 				format: ['camelCase', 'PascalCase', 'UPPER_CASE'],
 			},
 		],
+		'@typescript-eslint/consistent-type-imports': [
+			'error',
+			{
+				disallowTypeAnnotations: true,
+				fixStyle: 'inline-type-imports',
+				prefer: 'type-imports',
+			},
+		],
+		'import/consistent-type-specifier-style': ['error', 'prefer-inline'],
 		'import/extensions': [
 			'error',
 			'ignorePackages',

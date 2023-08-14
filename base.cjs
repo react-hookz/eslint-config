@@ -37,6 +37,30 @@ module.exports = {
 					props: {
 						properties: false,
 					},
+					params: {
+						parameters: false,
+					},
+					el: {
+						elt: true,
+						element: true,
+					},
+					elt: {
+						element: false,
+					},
+					req: {
+						request: false,
+					},
+					res: {
+						resp: true,
+						response: true,
+						result: true,
+					},
+					resp: {
+						response: false,
+					},
+					str: {
+						string: false,
+					},
 
 					// Not part of `eslint-plugin-unicorn`
 					application: {
@@ -53,9 +77,6 @@ module.exports = {
 					e: {
 						error: true,
 						event: true,
-					},
-					el: {
-						element: true,
 					},
 					elem: {
 						element: true,
@@ -78,24 +99,12 @@ module.exports = {
 					param: {
 						parameter: true,
 					},
-					params: {
-						parameters: true,
-					},
 					prev: {
 						previous: true,
 					},
-					req: {
-						request: true,
-					},
-					res: {
-						response: true,
-						result: true,
-					},
+
 					ret: {
 						returnValue: true,
-					},
-					str: {
-						string: true,
 					},
 					temp: {
 						temporary: true,
@@ -107,11 +116,13 @@ module.exports = {
 						value: true,
 					},
 					err: {
-						error: true,
+						error: false,
 					},
 				},
 			},
 		],
+
+		'unicorn/no-useless-undefined': 'off',
 
 		'unicorn/better-regex': [
 			'error',
@@ -172,9 +183,13 @@ module.exports = {
 		'import/order': [
 			'error',
 			{
-				groups: ['builtin', 'external', 'parent', 'sibling', 'index'],
+				groups: ['builtin', 'external', 'internal', 'parent', 'sibling', 'index', 'object', 'type'],
 				'newlines-between': 'never',
 				warnOnUnassignedImports: true,
+				alphabetize: {
+					order: 'asc',
+					orderImportKind: 'asc',
+				},
 			},
 		],
 		'import/no-unassigned-import': [
