@@ -44,7 +44,7 @@
 		"commitizen": "^4.3.0",
 		"commitlint": "^17.7.1",
 		"husky": "^8.0.3",
-		"lint-staged": "^13.2.3",
+		"lint-staged": "^14.0.0",
 		"semantic-release": "^21.0.7",
 		"yarn": "^2.4.3"
 	},
