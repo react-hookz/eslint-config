@@ -1,3 +1,11 @@
+## [2.1.1](https://github.com/react-hookz/eslint-config/compare/v2.1.0...v2.1.1) (2023-08-14)
+
+
+### Bug Fixes
+
+* more touches to aliases and importing ([378fad3](https://github.com/react-hookz/eslint-config/commit/378fad3c307fbd8197d05d0cc294f0c26fbd29d2))
+* more tweaks to base and typescript config ([28c11ff](https://github.com/react-hookz/eslint-config/commit/28c11ffce18228be3bf36f1d6a2a1fcd819e28c3))
+
 # [2.1.0](https://github.com/react-hookz/eslint-config/compare/v2.0.4...v2.1.0) (2023-08-14)
 
 
