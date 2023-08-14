@@ -30,7 +30,7 @@ jobs:
         run: yarn install --frozen-lockfile
 
       - name: "Lint"
-        run: yarn lint -f @react-hookz/gha
+        run: yarn lint -f @react-hookz/gha .
 
   dependabot-merge:
     name: "Dependabot automerge"

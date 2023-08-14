@@ -16,6 +16,7 @@ module.exports = {
 			{
 				selector: 'variable',
 				modifiers: ['destructured'],
+				// eslint-disable-next-line unicorn/no-null
 				format: null,
 			},
 			{
@@ -29,6 +30,7 @@ module.exports = {
 					'accessor',
 					'enumMember',
 				],
+				// eslint-disable-next-line unicorn/no-null
 				format: null,
 				modifiers: ['requiresQuotes'],
 			},
@@ -38,7 +40,7 @@ module.exports = {
 				format: ['camelCase', 'PascalCase', 'UPPER_CASE'],
 			},
 		],
-		// Deviation from xo's config - we allow susage of null and empty array types.
+		// Deviation from xo's config - we allow usage of null and empty array types.
 		'@typescript-eslint/ban-types': [
 			'error',
 			{
