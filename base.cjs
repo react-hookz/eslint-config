@@ -12,6 +12,9 @@ module.exports = {
 		sourceType: 'module',
 	},
 	rules: {
+		// Annoying rule.
+		'default-case': 'off',
+
 		'no-use-extend-native/no-use-extend-native': 'error',
 
 		'unicorn/prevent-abbreviations': [
