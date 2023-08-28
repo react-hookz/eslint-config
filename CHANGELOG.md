@@ -1,3 +1,10 @@
+## [2.1.2](https://github.com/react-hookz/eslint-config/compare/v2.1.1...v2.1.2) (2023-08-28)
+
+
+### Bug Fixes
+
+* disable default-case rule ([fbc91c1](https://github.com/react-hookz/eslint-config/commit/fbc91c1d3a62046c3089f3934746e25bc0b8562d))
+
 ## [2.1.1](https://github.com/react-hookz/eslint-config/compare/v2.1.0...v2.1.1) (2023-08-14)
 
 
