@@ -1,3 +1,10 @@
+## [2.1.3](https://github.com/react-hookz/eslint-config/compare/v2.1.2...v2.1.3) (2023-10-05)
+
+
+### Bug Fixes
+
+* upgrade all dependencies ([a46c453](https://github.com/react-hookz/eslint-config/commit/a46c4534e2eda1b64c0b51ed0bc8284c5a3f979c))
+
 ## [2.1.2](https://github.com/react-hookz/eslint-config/compare/v2.1.1...v2.1.2) (2023-08-28)
 
 
