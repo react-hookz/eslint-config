@@ -1,3 +1,10 @@
+## [2.1.4](https://github.com/react-hookz/eslint-config/compare/v2.1.3...v2.1.4) (2023-10-05)
+
+
+### Bug Fixes
+
+* move prettier, eslint and eslint-plugin-prettier to peer dependencies ([332ac5d](https://github.com/react-hookz/eslint-config/commit/332ac5da1918dc0ec6db59402072e059f88a6e49))
+
 ## [2.1.3](https://github.com/react-hookz/eslint-config/compare/v2.1.2...v2.1.3) (2023-10-05)
 
 
