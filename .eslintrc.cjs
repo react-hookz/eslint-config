@@ -8,5 +8,9 @@ module.exports = {
 			files: ['*.md'],
 			extends: ['./md.cjs'],
 		},
+		{
+			files: ['*.mdx'],
+			extends: ['./mdx.cjs'],
+		},
 	],
 };
