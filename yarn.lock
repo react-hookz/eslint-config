@@ -155,6 +155,26 @@
     ts-node "^10.8.1"
     typescript "^4.6.4 || ^5.0.0"
 
+"@commitlint/load@^17.8.0":
+  version "17.8.0"
+  resolved "https://registry.yarnpkg.com/@commitlint/load/-/load-17.8.0.tgz#82f6c7555daecb4ce4b8a6282fcecc3665747578"
+  integrity sha512-9VnGXYJCP4tXmR4YrwP8n5oX6T5ZsHfPQq6WuUQOvAI+QsDQMaTGgTRXr7us+xsjz+b+mMBSagogqfUx2aixyw==
+  dependencies:
+    "@commitlint/config-validator" "^17.6.7"
+    "@commitlint/execute-rule" "^17.4.0"
+    "@commitlint/resolve-extends" "^17.6.7"
+    "@commitlint/types" "^17.4.4"
+    "@types/node" "20.5.1"
+    chalk "^4.1.0"
+    cosmiconfig "^8.0.0"
+    cosmiconfig-typescript-loader "^4.0.0"
+    lodash.isplainobject "^4.0.6"
+    lodash.merge "^4.6.2"
+    lodash.uniq "^4.5.0"
+    resolve-from "^5.0.0"
+    ts-node "^10.8.1"
+    typescript "^4.6.4 || ^5.0.0"
+
 "@commitlint/message@^17.4.2":
   version "17.4.2"
   resolved "https://registry.yarnpkg.com/@commitlint/message/-/message-17.4.2.tgz#f4753a79701ad6db6db21f69076e34de6580e22c"
@@ -1827,12 +1847,12 @@ commitizen@^4.0.3, commitizen@^4.3.0:
     strip-bom "4.0.0"
     strip-json-comments "3.1.1"
 
-commitlint@^17.7.2:
-  version "17.7.2"
-  resolved "https://registry.yarnpkg.com/commitlint/-/commitlint-17.7.2.tgz#b2f619c14c7e0e4653dd93a045312c909e844134"
-  integrity sha512-2WK/svhKxuPlBgXtZ3uJj5FYZDjfbPiD7P7BkHNgKs3ZPbj3wTXxP3TivPJPB8KY2M7/6AYwNNpc6KOOT83qww==
+commitlint@^17.8.0:
+  version "17.8.0"
+  resolved "https://registry.yarnpkg.com/commitlint/-/commitlint-17.8.0.tgz#510ec00d7ff35601885fda7fd5acdfe58e290755"
+  integrity sha512-xo0F0n4/W4Yq1BAmyICA+1ivPzILAPBQ/fx2PAn5uUQwzTXMdN8URE3P4YzMl6ey/1mRa6NsnW5yV9HJd5NMmA==
   dependencies:
-    "@commitlint/cli" "^17.7.2"
+    "@commitlint/cli" "^17.8.0"
     "@commitlint/types" "^17.4.4"
 
 common-ancestor-path@^1.0.1:
