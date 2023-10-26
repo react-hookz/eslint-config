@@ -215,7 +215,7 @@
   dependencies:
     find-up "^5.0.0"
 
-"@commitlint/types@^18.0.0", "@commitlint/types@^18.1.0":
+"@commitlint/types@^18.1.0":
   version "18.1.0"
   resolved "https://registry.yarnpkg.com/@commitlint/types/-/types-18.1.0.tgz#7d0d0227ee28b5bacbafa648601ee51e8604f03e"
   integrity sha512-65vGxZmbs+2OVwEItxhp3Ul7X2m2LyLfifYI/NdPwRqblmuES2w2aIRhIjb7cwUIBHHSTT8WXj4ixVHQibmvLQ==
@@ -1832,13 +1832,13 @@ commitizen@^4.0.3, commitizen@^4.3.0:
     strip-bom "4.0.0"
     strip-json-comments "3.1.1"
 
-commitlint@^18.0.0:
-  version "18.0.0"
-  resolved "https://registry.yarnpkg.com/commitlint/-/commitlint-18.0.0.tgz#0c28ef802f0b3c4181938a7912512863ff0a2f6e"
-  integrity sha512-5fw/JvGockBSOllMIjt4xl3BWctZA/0lu9XrdCOX76viC7X/hqBz08OkFXrFk0/GdgyEXy5hSwbE+KtIvmYOHw==
+commitlint@^18.1.0:
+  version "18.1.0"
+  resolved "https://registry.yarnpkg.com/commitlint/-/commitlint-18.1.0.tgz#43cb26ec769e484a34e76a66904fbd8370f12b29"
+  integrity sha512-O4tyj86o0nr/GSUa/KnHUIB3EyHj+Q3eRMBTXE/cpDA+Na2/VfgI08nOF1XOgRqQfsLCNe/764XQE4ogPodYmg==
   dependencies:
-    "@commitlint/cli" "^18.0.0"
-    "@commitlint/types" "^18.0.0"
+    "@commitlint/cli" "^18.1.0"
+    "@commitlint/types" "^18.1.0"
 
 common-ancestor-path@^1.0.1:
   version "1.0.1"
