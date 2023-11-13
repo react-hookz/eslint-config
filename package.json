@@ -40,7 +40,7 @@
 		"eslint-plugin-unicorn": "^49.0.0"
 	},
 	"devDependencies": {
-		"@commitlint/cli": "^18.1.0",
+		"@commitlint/cli": "^18.4.1",
 		"@commitlint/config-conventional": "^18.1.0",
 		"@commitlint/cz-commitlint": "^18.4.1",
 		"@react-hookz/eslint-formatter-gha": "^1.0.1",
