@@ -49,7 +49,7 @@
   resolved "https://registry.yarnpkg.com/@colors/colors/-/colors-1.5.0.tgz#bb504579c1cae923e6576a4f5da43d25f97bdbd9"
   integrity sha512-ooWCrlZP11i8GImSjTHYHLkvFDP48nS4+204nGb1RiX/WXYHmJA2III9/e2DWVabCESdW7hBAEzHRqUn9OUVvQ==
 
-"@commitlint/cli@^18.2.0", "@commitlint/cli@^18.4.1":
+"@commitlint/cli@^18.4.1":
   version "18.4.1"
   resolved "https://registry.yarnpkg.com/@commitlint/cli/-/cli-18.4.1.tgz#b008ff325f112da260ed92605ca9d9290e53ba81"
   integrity sha512-4+jljfd29Udw9RDDyigavLO9LvdbmB8O9xjDzVZ0R3lJuG7nCeyHgnKWIVpFaN590isZMV/cMeQK0gH7hRF40A==
@@ -213,7 +213,7 @@
   dependencies:
     find-up "^5.0.0"
 
-"@commitlint/types@^18.1.0", "@commitlint/types@^18.4.0":
+"@commitlint/types@^18.4.0":
   version "18.4.0"
   resolved "https://registry.yarnpkg.com/@commitlint/types/-/types-18.4.0.tgz#482393d587a86fdf0d98ed17d2efd598d5021049"
   integrity sha512-MKeaFxt0I9fhqUb2E+YIzX/gZtmkuodJET/XKiZIMvXUff8Ee4Ih86eLg+yAm2jf1pwGBmU02uNOp0y094w2Uw==
@@ -1785,13 +1785,13 @@ commitizen@^4.0.3, commitizen@^4.3.0:
     strip-bom "4.0.0"
     strip-json-comments "3.1.1"
 
-commitlint@^18.2.0:
-  version "18.2.0"
-  resolved "https://registry.yarnpkg.com/commitlint/-/commitlint-18.2.0.tgz#ab1a257c9ed6fda7de31cec381290f9a9c5f180c"
-  integrity sha512-abrXPEhNjw1FUCn+oT1HDG1Z4g8mlbzrpHrwO8ECj6Bwtkmoa8MaKuvwOltv6IRkj/ybjEBcBDmRe8r9gVGRJQ==
+commitlint@^18.4.1:
+  version "18.4.1"
+  resolved "https://registry.yarnpkg.com/commitlint/-/commitlint-18.4.1.tgz#a680f9112e3c427ada26f9c1cbd7120e0d8546af"
+  integrity sha512-l/whrYk3bxhSOJchjPPwWOI5mRaYBvV8yb2GtgVU5Nuu6v/Z5Do9+T0uGMkSL9YDWKdtUm0MtFGsGXLANWGxgA==
   dependencies:
-    "@commitlint/cli" "^18.2.0"
-    "@commitlint/types" "^18.1.0"
+    "@commitlint/cli" "^18.4.1"
+    "@commitlint/types" "^18.4.0"
 
 common-ancestor-path@^1.0.1:
   version "1.0.1"
