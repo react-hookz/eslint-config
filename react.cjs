@@ -16,5 +16,9 @@ module.exports = {
 		'react/require-default-props': 'off',
 		'react/no-unused-prop-types': 'off',
 		'react/prop-types': 'off',
+
+		// Not so convenient in significant amount of cases to
+		// prefix boolean prop with `is` or `has`.
+		'react/boolean-prop-naming': 'off',
 	},
 };

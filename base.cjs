@@ -140,6 +140,9 @@ module.exports = {
 
 		'unicorn/prefer-ternary': ['error', 'only-single-line'],
 
+		// It is up to app to decide file name casing.
+		'unicorn/filename-case': 'off',
+
 		'function-call-argument-newline': 'off',
 
 		'import/default': 'error',
