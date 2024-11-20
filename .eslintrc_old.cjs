@@ -2,15 +2,15 @@ module.exports = {
 	overrides: [
 		{
 			files: ['*.js', '*.cjs', '*.mjs'],
-			extends: ['./base.cjs'],
+			extends: ['./baseCopy.cjs'],
 		},
 		{
 			files: ['*.md'],
-			extends: ['./md.cjs'],
+			extends: ['./mdCopy.cjs'],
 		},
 		{
 			files: ['*.mdx'],
-			extends: ['./mdx.cjs'],
+			extends: ['./mdxCopy.cjs'],
 		},
 	],
 };

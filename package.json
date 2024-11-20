@@ -1,85 +1,88 @@
 {
-	"name": "@react-hookz/eslint-config",
-	"version": "2.1.5",
-	"description": "eslint configuration files used in @react-hookz projects",
-	"license": "MIT",
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/react-hookz/eslint-config.git"
-	},
-	"bugs": {
-		"url": "https://github.com/react-hookz/eslint-config/issues"
-	},
-	"publishConfig": {
-		"access": "public"
-	},
-	"type": "module",
-	"main": "./base.cjs",
-	"peerDependencies": {
-		"eslint": "^8.57.1",
-		"eslint-plugin-prettier": "^5.2.1",
-		"prettier": "^3.3.3"
-	},
-	"dependencies": {
-		"@typescript-eslint/eslint-plugin": "^7.18.0",
-		"@typescript-eslint/parser": "^7.18.0",
-		"eslint-config-prettier": "^9.1.0",
-		"eslint-config-xo": "^0.45.0",
-		"eslint-config-xo-react": "^0.27.0",
-		"eslint-config-xo-typescript": "^5.0.0",
-		"eslint-import-resolver-typescript": "^3.6.3",
-		"eslint-plugin-eslint-comments": "^3.2.0",
-		"eslint-plugin-import": "^2.31.0",
-		"eslint-plugin-jest": "^28.9.0",
-		"eslint-plugin-mdx": "^3.1.5",
-		"eslint-plugin-n": "^17.13.1",
-		"eslint-plugin-no-use-extend-native": "^0.5.0",
-		"eslint-plugin-promise": "^7.1.0",
-		"eslint-plugin-react": "^7.37.2",
-		"eslint-plugin-react-hooks": "^5.0.0",
-		"eslint-plugin-unicorn": "^56.0.0"
-	},
-	"devDependencies": {
-		"@commitlint/cli": "^19.5.0",
-		"@commitlint/config-conventional": "^19.5.0",
-		"@commitlint/cz-commitlint": "^19.5.0",
-		"@react-hookz/eslint-formatter-gha": "^2.0.1",
-		"@semantic-release/changelog": "^6.0.3",
-		"@semantic-release/git": "^10.0.1",
-		"@semantic-release/github": "^11.0.1",
-		"commitizen": "^4.3.1",
-		"commitlint": "^19.5.0",
-		"eslint": "^8.57.1",
-		"eslint-plugin-prettier": "^5.2.1",
-		"husky": "^9.1.6",
-		"lint-staged": "^15.2.10",
-		"prettier": "^3.3.3",
-		"semantic-release": "^24.2.0",
-		"yarn": "^1.22.22"
-	},
-	"scripts": {
-		"prepare": "husky install",
-		"commit": "git-cz",
-		"lint": "eslint",
-		"lint:fix": "yarn lint --fix"
-	},
-	"config": {
-		"commitizen": {
-			"path": "@commitlint/cz-commitlint"
-		}
-	},
-	"lint-staged": {
-		"*.c?js": "yarn lint:fix",
-		"*.mdx?": "yarn lint:fix"
-	},
-	"release": {
-		"plugins": [
-			"@semantic-release/commit-analyzer",
-			"@semantic-release/release-notes-generator",
-			"@semantic-release/changelog",
-			"@semantic-release/npm",
-			"@semantic-release/git",
-			"@semantic-release/github"
-		]
-	}
+  "name": "@react-hookz/eslint-config",
+  "version": "2.1.5",
+  "description": "eslint configuration files used in @react-hookz projects",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/react-hookz/eslint-config.git"
+  },
+  "bugs": {
+    "url": "https://github.com/react-hookz/eslint-config/issues"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "type": "module",
+  "main": "./base.mjs",
+  "peerDependencies": {
+    "eslint": "^9.14.0",
+    "eslint-plugin-prettier": "^5.2.1",
+    "prettier": "^3.3.3"
+  },
+  "dependencies": {
+    "@typescript-eslint/eslint-plugin": "^8.15.0",
+    "@typescript-eslint/parser": "^8.15.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-config-xo": "^0.46.0",
+    "eslint-config-xo-react": "^0.27.0",
+    "eslint-config-xo-typescript": "^7.0.0",
+    "eslint-import-resolver-typescript": "^3.6.3",
+    "eslint-plugin-eslint-comments": "^3.2.0",
+    "eslint-plugin-import": "^2.31.0",
+    "eslint-plugin-jest": "^28.9.0",
+    "eslint-plugin-mdx": "^3.1.5",
+    "eslint-plugin-n": "^17.13.2",
+    "eslint-plugin-no-use-extend-native": "^0.7.2",
+    "eslint-plugin-promise": "^7.1.0",
+    "eslint-plugin-react": "^7.37.2",
+    "eslint-plugin-react-hooks": "^5.0.0",
+    "eslint-plugin-unicorn": "^56.0.0"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^19.5.0",
+    "@commitlint/config-conventional": "^19.5.0",
+    "@commitlint/cz-commitlint": "^19.5.0",
+    "@react-hookz/eslint-formatter-gha": "^2.0.1",
+    "@semantic-release/changelog": "^6.0.3",
+    "@semantic-release/git": "^10.0.1",
+    "@semantic-release/github": "^11.0.1",
+    "commitizen": "^4.3.1",
+    "commitlint": "^19.5.0",
+    "eslint": "^9.14.0",
+    "eslint-plugin-prettier": "^5.2.1",
+    "husky": "^9.1.6",
+    "lint-staged": "^15.2.10",
+    "prettier": "^3.3.3",
+    "semantic-release": "^24.2.0",
+    "yarn": "^1.22.22"
+  },
+  "scripts": {
+    "prepare": "husky install",
+    "commit": "git-cz",
+    "lint": "eslint",
+    "lint:fix": "yarn lint --fix"
+  },
+  "config": {
+    "commitizen": {
+      "path": "@commitlint/cz-commitlint"
+    }
+  },
+  "lint-staged": {
+    "*.c?js": "yarn lint:fix",
+    "*.mdx?": "yarn lint:fix"
+  },
+  "release": {
+    "plugins": [
+      "@semantic-release/commit-analyzer",
+      "@semantic-release/release-notes-generator",
+      "@semantic-release/changelog",
+      "@semantic-release/npm",
+      "@semantic-release/git",
+      "@semantic-release/github"
+    ]
+  },
+  "overrides": {
+    "eslint": "^9.14.0"
+  }
 }
