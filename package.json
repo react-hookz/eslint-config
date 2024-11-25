@@ -33,7 +33,6 @@
 		"@vitest/eslint-plugin": "^1.1.10",
 		"eslint-config-prettier": "^9.1.0",
 		"eslint-config-xo": "^0.46.0",
-		"eslint-config-xo-react": "^0.27.0",
 		"eslint-config-xo-typescript": "^7.0.0",
 		"eslint-import-resolver-typescript": "^3.6.3",
 		"eslint-plugin-import": "^2.31.0",

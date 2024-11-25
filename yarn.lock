@@ -929,7 +929,6 @@ __metadata:
     eslint: "npm:^9.15.0"
     eslint-config-prettier: "npm:^9.1.0"
     eslint-config-xo: "npm:^0.46.0"
-    eslint-config-xo-react: "npm:^0.27.0"
     eslint-config-xo-typescript: "npm:^7.0.0"
     eslint-import-resolver-typescript: "npm:^3.6.3"
     eslint-plugin-import: "npm:^2.31.0"
@@ -2876,17 +2875,6 @@ __metadata:
   bin:
     eslint-config-prettier: bin/cli.js
   checksum: 10c0/6d332694b36bc9ac6fdb18d3ca2f6ac42afa2ad61f0493e89226950a7091e38981b66bac2b47ba39d15b73fff2cd32c78b850a9cf9eed9ca9a96bfb2f3a2f10d
-  languageName: node
-  linkType: hard
-
-"eslint-config-xo-react@npm:^0.27.0":
-  version: 0.27.0
-  resolution: "eslint-config-xo-react@npm:0.27.0"
-  peerDependencies:
-    eslint: ">=8.6.0"
-    eslint-plugin-react: ">=7.29.0"
-    eslint-plugin-react-hooks: ">=4.3.0"
-  checksum: 10c0/efb12214d7fd41de959ca95d44336a3cbf517b4e9b1499fdfd859791253ade3b3599f00a19c9e2679919df78fdf3ebc614741ba59e53376e9a399e96ffc12813
   languageName: node
   linkType: hard
 
