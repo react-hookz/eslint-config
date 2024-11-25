@@ -8,10 +8,6 @@ import eslintPluginUnicorn from 'eslint-plugin-unicorn';
 
 const baseConfig = [
 	js.configs.recommended,
-	{
-		// annoys af.
-		'capitalized-comments': 'off',
-	},
 
 	importPlugin.flatConfigs.recommended,
 	{
@@ -246,11 +242,12 @@ const baseConfig = [
 	...xo,
 	{
 		rules: {
-			// Annoying rule.
+			// annoying rules
 			'default-case': 'off',
+			'capitalized-comments': 'off',
 			'function-call-argument-newline': 'off',
 
-			// Conflicts with prettier
+			// conflicts with prettier
 			'@stylistic/object-curly-spacing': 'off',
 			'@stylistic/quotes': 'off',
 		},
