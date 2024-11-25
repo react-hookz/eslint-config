@@ -8,6 +8,10 @@ import eslintPluginUnicorn from 'eslint-plugin-unicorn';
 
 const baseConfig = [
 	js.configs.recommended,
+	{
+		// annoys af.
+		'capitalized-comments': 'off',
+	},
 
 	importPlugin.flatConfigs.recommended,
 	{
