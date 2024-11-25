@@ -1,4 +1,4 @@
-module.exports = {
+export default {
 	printWidth: 100,
 	tabs: true,
 	tabWidth: 2,
@@ -9,4 +9,4 @@ module.exports = {
 	bracketSpacing: true,
 	bracketSameLine: true,
 	arrowParens: 'always',
-};
+}
