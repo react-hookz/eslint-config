@@ -1,8 +1,6 @@
 import nodePlugin from 'eslint-plugin-n';
 
-console.log(nodePlugin.configs['flat/recommended-module']);
-
-export default [
+const nodeConfig = [
 	nodePlugin.configs['flat/recommended-module'],
 	{
 		files: ['*.{js,mjs,cjs}'],
@@ -34,3 +32,5 @@ export default [
 		},
 	},
 ];
+
+export default nodeConfig;

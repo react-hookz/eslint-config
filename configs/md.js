@@ -1,13 +1,13 @@
 import * as mdx from 'eslint-plugin-mdx';
 import eslintPluginPrettierRecommended from 'eslint-plugin-prettier/recommended';
 
-export default [
+const mdConfig = [
 	{
 		...mdx.flat,
-		// optional, if you want to lint code blocks at the same
+		// Optional, if you want to lint code blocks at the same
 		processor: mdx.createRemarkProcessor({
 			lintCodeBlocks: true,
-			// optional, if you want to disable language mapper, set it to `false`
+			// Optional, if you want to disable language mapper, set it to `false`
 			// if you want to override the default language mapper inside, you can provide your own
 			languageMapper: {},
 		}),
@@ -16,7 +16,7 @@ export default [
 		...mdx.flatCodeBlocks,
 		rules: {
 			...mdx.flatCodeBlocks.rules,
-			// if you want to override some rules for code blocks
+			// If you want to override some rules for code blocks
 			'no-var': 'error',
 			'prefer-const': 'error',
 		},
@@ -35,3 +35,5 @@ export default [
 		},
 	},
 ];
+
+export default mdConfig;

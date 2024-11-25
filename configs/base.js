@@ -1,12 +1,12 @@
-import importPlugin from 'eslint-plugin-import';
 import js from '@eslint/js';
-import eslintPluginPrettierRecommended from 'eslint-plugin-prettier/recommended';
 import xo from 'eslint-config-xo';
-import pluginPromise from 'eslint-plugin-promise';
+import importPlugin from 'eslint-plugin-import';
 import eslintPluginNoUseExtendNative from 'eslint-plugin-no-use-extend-native';
+import eslintPluginPrettierRecommended from 'eslint-plugin-prettier/recommended';
+import pluginPromise from 'eslint-plugin-promise';
 import eslintPluginUnicorn from 'eslint-plugin-unicorn';
 
-export default [
+const baseConfig = [
 	js.configs.recommended,
 
 	importPlugin.flatConfigs.recommended,
@@ -249,3 +249,5 @@ export default [
 	},
 	eslintPluginPrettierRecommended,
 ];
+
+export default baseConfig;

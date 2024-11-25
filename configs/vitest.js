@@ -1,1 +1,2 @@
-export default [];
+const vitestConfig = [];
+export default vitestConfig;

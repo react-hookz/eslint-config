@@ -1,1 +1,2 @@
-export default [];
+const typescriptConfig = [];
+export default typescriptConfig;
