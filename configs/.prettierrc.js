@@ -1,4 +1,4 @@
-module.exports = {
+const config = {
 	printWidth: 100,
 	tabs: true,
 	tabWidth: 2,
@@ -10,3 +10,5 @@ module.exports = {
 	bracketSameLine: true,
 	arrowParens: 'always',
 };
+
+export default config;
