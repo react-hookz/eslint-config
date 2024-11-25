@@ -5,6 +5,11 @@ console.log(nodePlugin.configs['flat/recommended-module']);
 export default [
 	nodePlugin.configs['flat/recommended-module'],
 	{
+		files: ['*.{js,mjs,cjs}'],
+		languageOptions: {
+			ecmaVersion: 'latest',
+			sourceType: 'module',
+		},
 		rules: {
 			'n/no-mixed-requires': [
 				'error',
