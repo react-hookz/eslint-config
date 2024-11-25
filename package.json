@@ -27,7 +27,6 @@
 	},
 	"dependencies": {
 		"@eslint/js": "^9.15.0",
-		"@eslint/markdown": "^6.2.1",
 		"@typescript-eslint/eslint-plugin": "^8.15.0",
 		"@typescript-eslint/parser": "^8.15.0",
 		"@vitest/eslint-plugin": "^1.1.10",
@@ -49,10 +48,12 @@
 		"@commitlint/cli": "^19.6.0",
 		"@commitlint/config-conventional": "^19.6.0",
 		"@react-hookz/eslint-formatter-gha": "^2.0.1",
+		"@semantic-release/exec": "^6.0.3",
 		"eslint": "^9.15.0",
 		"eslint-plugin-prettier": "^5.2.1",
 		"husky": "^9.1.7",
 		"lint-staged": "^15.2.10",
+		"pinst": "^3.0.0",
 		"prettier": "^3.3.3",
 		"semantic-release": "^24.2.0"
 	},

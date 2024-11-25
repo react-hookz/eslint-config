@@ -239,7 +239,10 @@ const baseConfig = [
 		},
 	},
 
-	...xo,
+	{
+		...xo[0],
+		files: ['*.{js,mjs,cjs,ts,tsx,jsx}'],
+	},
 	{
 		rules: {
 			// annoying rules

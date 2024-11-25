@@ -1,6 +1,6 @@
 const config = {
 	printWidth: 100,
-	tabs: true,
+	useTabs: true,
 	tabWidth: 2,
 	semi: true,
 	singleQuote: true,
