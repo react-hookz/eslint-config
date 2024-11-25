@@ -248,6 +248,7 @@ const baseConfig = [
 
 			// Conflicts with prettier
 			'@stylistic/object-curly-spacing': 'off',
+			'@stylistic/quotes': 'off',
 		},
 	},
 	eslintPluginPrettierRecommended,
