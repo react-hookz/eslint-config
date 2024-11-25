@@ -57,7 +57,9 @@
 		"semantic-release": "^24.2.0"
 	},
 	"scripts": {
-		"prepare": "husky",
+		"postinstall": "husky",
+		"prepack": "pinst --disable",
+		"postpack": "pinst --enable",
 		"commit": "git-cz",
 		"lint": "eslint",
 		"lint:fix": "yarn lint --fix"
