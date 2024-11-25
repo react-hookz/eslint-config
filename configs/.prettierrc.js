@@ -1,4 +1,4 @@
-export default {
+const config = {
 	printWidth: 100,
 	tabs: true,
 	tabWidth: 2,
@@ -10,3 +10,5 @@ export default {
 	bracketSameLine: true,
 	arrowParens: 'always',
 };
+
+export default config;

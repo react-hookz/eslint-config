@@ -245,6 +245,9 @@ const baseConfig = [
 			// Annoying rule.
 			'default-case': 'off',
 			'function-call-argument-newline': 'off',
+
+			// Conflicts with prettier
+			'@stylistic/object-curly-spacing': 'off',
 		},
 	},
 	eslintPluginPrettierRecommended,
