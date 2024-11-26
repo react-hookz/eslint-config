@@ -63,7 +63,6 @@
 		"postinstall": "husky",
 		"prepack": "pinst --disable",
 		"postpack": "pinst --enable",
-		"commit": "git-cz",
 		"lint": "eslint",
 		"lint:fix": "yarn lint --fix"
 	},
