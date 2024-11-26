@@ -17,7 +17,7 @@ This package does not install `eslint`, `prettier`, or `eslint-plugin-prettier`,
 install them manually.
 
 ```shell
-yarn install -D @react-hookz/eslint-config eslint eslint-plugin-prettier prettier
+yarn add -D @react-hookz/eslint-config eslint eslint-plugin-prettier prettier
 ```
 
 ## Usage
