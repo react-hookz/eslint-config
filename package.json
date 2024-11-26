@@ -15,7 +15,9 @@
 	},
 	"type": "module",
 	"exports": {
-		"*": "./configs/*"
+		".": "./configs/base.js",
+		"./*": "./configs/*",
+		"./configs/*": null
 	},
 	"files": [
 		"configs"
