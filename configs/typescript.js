@@ -6,7 +6,7 @@ import baseConfig from './base.js';
 const typescriptConfig = [
 	...baseConfig,
 
-	xoTypescript,
+	...xoTypescript,
 	{
 		rules: {
 			'import/consistent-type-specifier-style': ['error', 'prefer-inline'],
