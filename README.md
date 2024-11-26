@@ -24,19 +24,21 @@ yarn install -D @react-hookz/eslint-config eslint eslint-plugin-prettier prettie
 
 This config is expected to be used with ESLint 8.3+, as it utilizes flat config.
 
-Import the package directly and use the sub-configs you are interested in, spreading them into your
-config.
+Import sub-configs you are interested in, spreading them into your config. All configs are
+guaranteed to be an array.
 
 Some configs, like `jest` and `vitest`, require extra dependencies to be installed. You can find the
 required dependencies in the respective READMEs.
 
 ```js
-import { config } from '@react-hookz/eslint-config';
+import baseConfig from '@react-hookz/eslint-config/base.js';
+import reactConfig from '@react-hookz/eslint-config/react.js';
+import vitestConfig from '@react-hookz/eslint-config/vitest.js';
 
 export default [
-	...config.base,
-	...config.react,
-	...config.vitest,
+	...baseConfig,
+	...reactConfig,
+	...vitestConfig,
 	{
 		rules: {
 			// your own overrides
