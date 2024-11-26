@@ -24,15 +24,18 @@ const mdConfig = [
 			'import/no-anonymous-default-export': 'off',
 		},
 	},
-	eslintPluginPrettierRecommended,
 	{
-		files: ['*.md'],
+		...eslintPluginPrettierRecommended,
+		files: ['**/*.{md,mdx}'],
+	},
+	{
+		files: ['**/*.md'],
 		rules: {
 			'prettier/prettier': ['error', { parser: 'markdown' }],
 		},
 	},
 	{
-		files: ['*.mdx'],
+		files: ['**/*.mdx'],
 		rules: {
 			'prettier/prettier': ['error', { parser: 'mdx' }],
 		},

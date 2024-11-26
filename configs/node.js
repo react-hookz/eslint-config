@@ -4,7 +4,7 @@ import nodePlugin from 'eslint-plugin-n';
 const nodeConfig = [
 	nodePlugin.configs['flat/recommended-module'],
 	{
-		files: ['*.{js,mjs,cjs}'],
+		files: ['**/*.{js,mjs,cjs,ts,mts,cts}'],
 		languageOptions: {
 			ecmaVersion: 'latest',
 			sourceType: 'module',

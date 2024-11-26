@@ -8,13 +8,9 @@ import eslintPluginUnicorn from 'eslint-plugin-unicorn';
 
 /** @typedef {import('eslint').Linter} Linter */
 
-/** @type {Linter.Config[]} */
-const baseConfig = [
-	js.configs.recommended,
-
+export const importConfig = [
 	importPlugin.flatConfigs.recommended,
 	{
-		files: ['**/*.{js,mjs,cjs}'],
 		languageOptions: {
 			ecmaVersion: 'latest',
 			sourceType: 'module',
@@ -98,8 +94,27 @@ const baseConfig = [
 					],
 				},
 			],
+
+			// disabled due to https://github.com/import-js/eslint-plugin-import/issues/3076
+			'import/no-unresolved': 'off',
 		},
 	},
+];
+
+/**
+ * Set configs file patters in case config does not have one.
+ *
+ * @param {Linter.Config[]} configs
+ * @param {string[]} files
+ * @return {Linter.Config[]}
+ */
+export function adjustESLintConfigFiles(configs, files) {
+	return configs.map((cfg) => ({ files, ...cfg }));
+}
+
+/** @type {Linter.Config[]} */
+const baseConfig = [
+	js.configs.recommended,
 
 	pluginPromise.configs['flat/recommended'],
 	{
@@ -108,6 +123,8 @@ const baseConfig = [
 			'promise/always-return': 'off',
 		},
 	},
+
+	...importConfig,
 
 	eslintPluginNoUseExtendNative.configs.recommended,
 
@@ -242,10 +259,7 @@ const baseConfig = [
 		},
 	},
 
-	{
-		...xo[0],
-		files: ['*.{js,mjs,cjs,ts,tsx,jsx}'],
-	},
+	...xo,
 	{
 		rules: {
 			// annoying rules
@@ -256,9 +270,11 @@ const baseConfig = [
 			// conflicts with prettier
 			'@stylistic/object-curly-spacing': 'off',
 			'@stylistic/quotes': 'off',
+			'@stylistic/arrow-parens': 'off',
+			'@stylistic/comma-dangle': 'off',
 		},
 	},
 	eslintPluginPrettierRecommended,
 ];
 
-export default baseConfig;
+export default adjustESLintConfigFiles(baseConfig, ['**/*.{js,mjs,cjs,jsx,ts,mts,cts,tsx}']);

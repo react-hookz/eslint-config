@@ -1,11 +1,11 @@
 import vitest from '@vitest/eslint-plugin';
+import { adjustESLintConfigFiles } from './base.js';
 
-/** @var {Linter.Config[]} config */
+/** @var {Linter.Config[]} */
 const vitestConfig = [
 	{
-		files: ['*.test.{js,jsx,ts,tsx}', '*.suite.{js,jsx,ts,tsx}'],
 		plugins: { vitest },
 		rules: vitest.configs.recommended.rules,
 	},
 ];
-export default vitestConfig;
+export default adjustESLintConfigFiles(vitestConfig, ['**/*.{test,spec}.{js,jsx,mjs,cjs,ts,tsx}']);
