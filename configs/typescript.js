@@ -2,6 +2,7 @@ import xoTypescript from 'eslint-config-xo-typescript';
 import eslintPluginPrettierRecommended from 'eslint-plugin-prettier/recommended';
 import baseConfig from './base.js';
 
+/** @var {Linter.Config[]} config */
 const typescriptConfig = [
 	...baseConfig,
 

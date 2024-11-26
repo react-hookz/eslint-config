@@ -1,5 +1,6 @@
 import nodePlugin from 'eslint-plugin-n';
 
+/** @type {Linter.Config[]} */
 const nodeConfig = [
 	nodePlugin.configs['flat/recommended-module'],
 	{

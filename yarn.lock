@@ -853,11 +853,11 @@ __metadata:
   linkType: hard
 
 "@octokit/types@npm:^13.0.0, @octokit/types@npm:^13.1.0, @octokit/types@npm:^13.6.0":
-  version: 13.6.1
-  resolution: "@octokit/types@npm:13.6.1"
+  version: 13.6.2
+  resolution: "@octokit/types@npm:13.6.2"
   dependencies:
     "@octokit/openapi-types": "npm:^22.2.0"
-  checksum: 10c0/891334b5786ba6aef953384cec05d53e05132dd577c0c22db124d55eaa69609362d1e3147853b46e91bf226e046ba24d615c55214c8f8f4e7c3a5c38429b38e9
+  checksum: 10c0/ea51afb21b667b25dad9e5daae1701da1b362a4d6ed9609f6d3f9f219e5389bf50f7e53ae029ca190750e278be3ab963cac648a95ad248f245a5fda16a4f1ed1
   languageName: node
   linkType: hard
 
@@ -911,8 +911,10 @@ __metadata:
     "@eslint/js": "npm:^9.15.0"
     "@react-hookz/eslint-formatter-gha": "npm:^2.0.1"
     "@semantic-release/exec": "npm:^6.0.3"
+    "@types/node": "npm:^22.10.0"
     "@typescript-eslint/eslint-plugin": "npm:^8.15.0"
     "@typescript-eslint/parser": "npm:^8.15.0"
+    "@typescript-eslint/utils": "npm:^8.16.0"
     "@vitest/eslint-plugin": "npm:^1.1.10"
     eslint: "npm:^9.15.0"
     eslint-config-prettier: "npm:^9.1.0"
@@ -934,10 +936,21 @@ __metadata:
     pinst: "npm:^3.0.0"
     prettier: "npm:^3.3.3"
     semantic-release: "npm:^24.2.0"
+    typescript: "npm:^5.7.2"
   peerDependencies:
     eslint: ^9.15.0
     eslint-plugin-prettier: ^5.2.1
+    jest: "*"
     prettier: ^3.3.3
+    typescript: ^5.0.0
+    vitest: "*"
+  peerDependenciesMeta:
+    jest:
+      optional: true
+    typescript:
+      optional: true
+    vitest:
+      optional: true
   languageName: unknown
   linkType: soft
 
@@ -1211,11 +1224,11 @@ __metadata:
   linkType: hard
 
 "@types/conventional-commits-parser@npm:^5.0.0":
-  version: 5.0.0
-  resolution: "@types/conventional-commits-parser@npm:5.0.0"
+  version: 5.0.1
+  resolution: "@types/conventional-commits-parser@npm:5.0.1"
   dependencies:
     "@types/node": "npm:*"
-  checksum: 10c0/16c748ce01cb3b3ea5947950acd695569c0daa8da62cc7e0eb98b15c4d7f812f95c079fe2c853325509f8aa73cfd388390319ae4621c8dfb21eeacb63accdb25
+  checksum: 10c0/4b7b561f195f779d07f973801a9f15d77cd58ceb67e817459688b11cc735288d30de050f445c91f4cd2c007fa86824e59a6e3cde602d150b828c4474f6e67be5
   languageName: node
   linkType: hard
 
@@ -1299,12 +1312,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:*, @types/node@npm:^22.0.0":
-  version: 22.9.4
-  resolution: "@types/node@npm:22.9.4"
+"@types/node@npm:*, @types/node@npm:^22.0.0, @types/node@npm:^22.10.0":
+  version: 22.10.0
+  resolution: "@types/node@npm:22.10.0"
   dependencies:
-    undici-types: "npm:~6.19.8"
-  checksum: 10c0/85521424033d32c2cb2279f1a2dfe9a3630f253a4c877352607eece2b5fe45ddd80acc608dfcef9ae9c2b385203332e53cc1b6cb15c958504b26011ddcf65d4f
+    undici-types: "npm:~6.20.0"
+  checksum: 10c0/efb3783b6fe74b4300c5bdd4f245f1025887d9b1d0950edae584af58a30d95cc058c10b4b3428f8300e4318468b605240c2ede8fcfb6ead2e0f05bca31e54c1b
   languageName: node
   linkType: hard
 
@@ -1437,7 +1450,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@typescript-eslint/utils@npm:8.16.0, @typescript-eslint/utils@npm:^6.0.0 || ^7.0.0 || ^8.0.0, @typescript-eslint/utils@npm:^8.13.0":
+"@typescript-eslint/utils@npm:8.16.0, @typescript-eslint/utils@npm:^6.0.0 || ^7.0.0 || ^8.0.0, @typescript-eslint/utils@npm:^8.13.0, @typescript-eslint/utils@npm:^8.16.0":
   version: 8.16.0
   resolution: "@typescript-eslint/utils@npm:8.16.0"
   dependencies:
@@ -7183,11 +7196,11 @@ __metadata:
   linkType: hard
 
 "prettier@npm:^3.3.3":
-  version: 3.3.3
-  resolution: "prettier@npm:3.3.3"
+  version: 3.4.0
+  resolution: "prettier@npm:3.4.0"
   bin:
     prettier: bin/prettier.cjs
-  checksum: 10c0/b85828b08e7505716324e4245549b9205c0cacb25342a030ba8885aba2039a115dbcf75a0b7ca3b37bc9d101ee61fab8113fc69ca3359f2a226f1ecc07ad2e26
+  checksum: 10c0/00974e5053dcf04cefe8d6bdef16d6a311d834ff074e927dcb85a425c8a300113fe60dc269373c892edb58e0e57749541f2a7a91ee51cdd40ab3092587772cae
   languageName: node
   linkType: hard
 
@@ -8505,11 +8518,11 @@ __metadata:
   linkType: hard
 
 "ts-api-utils@npm:^1.3.0":
-  version: 1.4.1
-  resolution: "ts-api-utils@npm:1.4.1"
+  version: 1.4.2
+  resolution: "ts-api-utils@npm:1.4.2"
   peerDependencies:
     typescript: ">=4.2.0"
-  checksum: 10c0/11a2c4b280ead1026722bd2dd5cbfd8a88d06adcbf6ade8ce92914bd4828c08b384cf9f98cf652bd41d61320604186c5ed60f3077bc9cb8a8c44e9ceae29d0e8
+  checksum: 10c0/b9d82922af42cefa14650397f5ff42a1ff8c8a1b4fac3590fa3e2daeeb3666fbe260a324f55dc748d9653dce30c2a21a148fba928511b2022bedda66423695bf
   languageName: node
   linkType: hard
 
@@ -8595,9 +8608,9 @@ __metadata:
   linkType: hard
 
 "type-fest@npm:^4.6.0, type-fest@npm:^4.7.1":
-  version: 4.28.0
-  resolution: "type-fest@npm:4.28.0"
-  checksum: 10c0/fbaf766ae002c2b97e22cd1f48f20d6ff05915f25cf04632591e9ab52ee716cf38b9554f6198625c07e3e8bdf5277c284f8889cfe1fbea6fc19374706f2c75f8
+  version: 4.28.1
+  resolution: "type-fest@npm:4.28.1"
+  checksum: 10c0/8b0dabe2f063dff6dff1964d70f1d844ea13a7534e9aa454b48569d5837f76252bb4518bbd3ca98b4fb65e49a732c555649cf60fc02b0254a0d69eb00c518725
   languageName: node
   linkType: hard
 
@@ -8677,6 +8690,26 @@ __metadata:
   languageName: node
   linkType: hard
 
+"typescript@npm:^5.7.2":
+  version: 5.7.2
+  resolution: "typescript@npm:5.7.2"
+  bin:
+    tsc: bin/tsc
+    tsserver: bin/tsserver
+  checksum: 10c0/a873118b5201b2ef332127ef5c63fb9d9c155e6fdbe211cbd9d8e65877283797cca76546bad742eea36ed7efbe3424a30376818f79c7318512064e8625d61622
+  languageName: node
+  linkType: hard
+
+"typescript@patch:typescript@npm%3A^5.7.2#optional!builtin<compat/typescript>":
+  version: 5.7.2
+  resolution: "typescript@patch:typescript@npm%3A5.7.2#optional!builtin<compat/typescript>::version=5.7.2&hash=5786d5"
+  bin:
+    tsc: bin/tsc
+    tsserver: bin/tsserver
+  checksum: 10c0/f3b8082c9d1d1629a215245c9087df56cb784f9fb6f27b5d55577a20e68afe2a889c040aacff6d27e35be165ecf9dca66e694c42eb9a50b3b2c451b36b5675cb
+  languageName: node
+  linkType: hard
+
 "uglify-js@npm:^3.1.4":
   version: 3.19.3
   resolution: "uglify-js@npm:3.19.3"
@@ -8698,10 +8731,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"undici-types@npm:~6.19.8":
-  version: 6.19.8
-  resolution: "undici-types@npm:6.19.8"
-  checksum: 10c0/078afa5990fba110f6824823ace86073b4638f1d5112ee26e790155f481f2a868cc3e0615505b6f4282bdf74a3d8caad715fd809e870c2bb0704e3ea6082f344
+"undici-types@npm:~6.20.0":
+  version: 6.20.0
+  resolution: "undici-types@npm:6.20.0"
+  checksum: 10c0/68e659a98898d6a836a9a59e6adf14a5d799707f5ea629433e025ac90d239f75e408e2e5ff086afc3cace26f8b26ee52155293564593fbb4a2f666af57fc59bf
   languageName: node
   linkType: hard
 

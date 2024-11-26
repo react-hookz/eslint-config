@@ -1,5 +1,6 @@
 import typescriptConfig from './typescript.js';
 
+/** @var {Linter.Config[]} config */
 const typescriptUnsafeConfig = [
 	...typescriptConfig,
 	{

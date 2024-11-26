@@ -1,6 +1,7 @@
 import pluginReact from 'eslint-plugin-react';
 import pluginReactHooks from 'eslint-plugin-react-hooks';
 
+/** @var {Linter.Config[]} config */
 const reactConfig = [
 	pluginReact.configs.flat.recommended,
 	pluginReactHooks.configs.recommended,

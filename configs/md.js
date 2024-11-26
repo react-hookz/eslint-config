@@ -1,6 +1,7 @@
 import * as mdx from 'eslint-plugin-mdx';
 import eslintPluginPrettierRecommended from 'eslint-plugin-prettier/recommended';
 
+/** @type {Linter.Config[]} */
 const mdConfig = [
 	{
 		...mdx.flat,
@@ -19,6 +20,8 @@ const mdConfig = [
 			// If you want to override some rules for code blocks
 			'no-var': 'error',
 			'prefer-const': 'error',
+			'import/no-unresolved': 'off',
+			'import/no-anonymous-default-export': 'off',
 		},
 	},
 	eslintPluginPrettierRecommended,

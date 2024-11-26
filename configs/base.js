@@ -6,6 +6,9 @@ import eslintPluginPrettierRecommended from 'eslint-plugin-prettier/recommended'
 import pluginPromise from 'eslint-plugin-promise';
 import eslintPluginUnicorn from 'eslint-plugin-unicorn';
 
+/** @typedef {import('eslint').Linter} Linter */
+
+/** @type {Linter.Config[]} */
 const baseConfig = [
 	js.configs.recommended,
 
