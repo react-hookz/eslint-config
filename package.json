@@ -64,7 +64,7 @@
 	"devDependencies": {
 		"@commitlint/cli": "^19.6.0",
 		"@commitlint/config-conventional": "^19.6.0",
-		"@react-hookz/eslint-formatter-gha": "^2.0.1",
+		"@react-hookz/eslint-formatter-gha": "^3.0.0",
 		"@semantic-release/exec": "^6.0.3",
 		"@types/node": "^22.10.0",
 		"@typescript-eslint/utils": "^8.16.0",

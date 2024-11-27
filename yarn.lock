@@ -5,7 +5,7 @@ __metadata:
   version: 8
   cacheKey: 10c0
 
-"@actions/core@npm:^1.10.1":
+"@actions/core@npm:^1.11.1":
   version: 1.11.1
   resolution: "@actions/core@npm:1.11.1"
   dependencies:
@@ -909,7 +909,7 @@ __metadata:
     "@commitlint/cli": "npm:^19.6.0"
     "@commitlint/config-conventional": "npm:^19.6.0"
     "@eslint/js": "npm:^9.15.0"
-    "@react-hookz/eslint-formatter-gha": "npm:^2.0.1"
+    "@react-hookz/eslint-formatter-gha": "npm:^3.0.0"
     "@semantic-release/exec": "npm:^6.0.3"
     "@types/node": "npm:^22.10.0"
     "@typescript-eslint/eslint-plugin": "npm:^8.15.0"
@@ -954,12 +954,12 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@react-hookz/eslint-formatter-gha@npm:^2.0.1":
-  version: 2.0.1
-  resolution: "@react-hookz/eslint-formatter-gha@npm:2.0.1"
+"@react-hookz/eslint-formatter-gha@npm:^3.0.0":
+  version: 3.0.0
+  resolution: "@react-hookz/eslint-formatter-gha@npm:3.0.0"
   dependencies:
-    "@actions/core": "npm:^1.10.1"
-  checksum: 10c0/4e4552f8d3867157eb696b96d77ade1be42bf65b10c179716557cde5856c42c90eb53173997d65a89693119f1959254297b8f2ea8989d9454234626c1909d3ed
+    "@actions/core": "npm:^1.11.1"
+  checksum: 10c0/704d7008369a78fd86a66437bb825bc1ee256a5a6e43474eef77cca807a7e9bf213ca64f9686e959c740452de90c945853094356c5fa1753bd57a1335bf4775f
   languageName: node
   linkType: hard
 
