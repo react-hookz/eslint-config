@@ -5,7 +5,17 @@ import { adjustESLintConfigFiles } from './base.js';
 /** @var {Linter.Config[]} */
 const reactConfig = [
 	pluginReact.configs.flat.recommended,
-	pluginReactHooks.configs.recommended,
+	{
+		plugins: {
+			'react-hooks': {
+				rules: pluginReactHooks.rules,
+			},
+		},
+		rules: {
+			'react-hooks/rules-of-hooks': 'error',
+			'react-hooks/exhaustive-deps': 'warn',
+		},
+	},
 	{
 		rules: {
 			// While using ts with `react-jsx` preset - there
