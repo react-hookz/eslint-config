@@ -6,10 +6,16 @@ import { adjustESLintConfigFiles } from './base.js';
 const reactConfig = [
 	pluginReact.configs.flat.recommended,
 	{
-    plugins: {
-        'react-hooks': pluginReactHooks
-    }
-  },
+		plugins: {
+			'react-hooks': {
+				rules: pluginReactHooks.rules,
+			},
+		},
+		rules: {
+			'react-hooks/rules-of-hooks': 'error',
+			'react-hooks/exhaustive-deps': 'warn',
+		},
+	},
 	{
 		rules: {
 			// While using ts with `react-jsx` preset - there
