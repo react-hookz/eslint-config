@@ -1,6 +1,7 @@
 import xoTypescript from 'eslint-config-xo-typescript';
 import importPlugin from 'eslint-plugin-import';
-import {adjustESLintConfigFiles, importConfig} from './base.js';
+import {importConfig} from './base.js';
+import {setFilesIfUndef} from './util.js';
 
 /** @var {Linter.Config[]} */
 const typescriptConfig = [
@@ -87,4 +88,4 @@ const typescriptConfig = [
 		},
 	},
 ];
-export default adjustESLintConfigFiles(typescriptConfig, ['**/*.{ts,mts,cts,tsx}']);
+export default setFilesIfUndef(typescriptConfig, ['**/*.{ts,mts,cts,tsx}']);

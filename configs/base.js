@@ -5,6 +5,7 @@ import importPlugin from 'eslint-plugin-import';
 import eslintPluginNoUseExtendNative from 'eslint-plugin-no-use-extend-native';
 import pluginPromise from 'eslint-plugin-promise';
 import eslintPluginUnicorn from 'eslint-plugin-unicorn';
+import {setFilesIfUndef} from './util.js';
 
 /** @typedef {import('eslint').Linter} Linter */
 
@@ -100,17 +101,6 @@ export const importConfig = [
 		},
 	},
 ];
-
-/**
- * Set configs file patters in case config does not have one.
- *
- * @param {Linter.Config[]} configs
- * @param {string[]} files
- * @return {Linter.Config[]}
- */
-export function adjustESLintConfigFiles(configs, files) {
-	return configs.map(cfg => ({files, ...cfg}));
-}
 
 /** @type {Linter.Config[]} */
 const baseConfig = [
@@ -296,4 +286,4 @@ const baseConfig = [
 	},
 ];
 
-export default adjustESLintConfigFiles(baseConfig, ['**/*.{js,mjs,cjs,jsx,ts,mts,cts,tsx}']);
+export default setFilesIfUndef(baseConfig, ['**/*.{js,mjs,cjs,jsx,ts,mts,cts,tsx}']);

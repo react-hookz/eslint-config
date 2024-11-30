@@ -1,6 +1,6 @@
 import pluginReact from 'eslint-plugin-react';
 import pluginReactHooks from 'eslint-plugin-react-hooks';
-import {adjustESLintConfigFiles} from './base.js';
+import {setFilesIfUndef} from './util.js';
 
 /** @var {Linter.Config[]} */
 const reactConfig = [
@@ -217,4 +217,4 @@ const reactConfig = [
 		},
 	},
 ];
-export default adjustESLintConfigFiles(reactConfig, ['**/*.{ts,tsx,js,jsx}']);
+export default setFilesIfUndef(reactConfig, ['**/*.{ts,tsx,js,jsx}']);

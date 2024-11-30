@@ -1,5 +1,5 @@
-import {adjustESLintConfigFiles} from './base.js';
 import typescriptConfig from './typescript.js';
+import {setFilesIfUndef} from './util.js';
 
 /** @var {Linter.Config[]} */
 const typescriptUnsafeConfig = [
@@ -16,4 +16,4 @@ const typescriptUnsafeConfig = [
 		},
 	},
 ];
-export default adjustESLintConfigFiles(typescriptUnsafeConfig, ['**/*.{ts,tsx,mts,ctx}']);
+export default setFilesIfUndef(typescriptUnsafeConfig, ['**/*.{ts,tsx,mts,ctx}']);

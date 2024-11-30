@@ -1,10 +1,10 @@
 import nodePlugin from 'eslint-plugin-n';
+import {setFilesIfUndef} from './util.js';
 
 /** @type {Linter.Config[]} */
 const nodeConfig = [
 	nodePlugin.configs['flat/recommended-module'],
 	{
-		files: ['**/*.{js,mjs,cjs,ts,mts,cts}'],
 		languageOptions: {
 			ecmaVersion: 'latest',
 			sourceType: 'module',
@@ -34,4 +34,4 @@ const nodeConfig = [
 	},
 ];
 
-export default nodeConfig;
+export default setFilesIfUndef(nodeConfig, ['**/*.{js,mjs,cjs,ts,mts,cts}']);
