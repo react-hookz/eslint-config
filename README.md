@@ -13,11 +13,10 @@ eslint configuration files used in @react-hookz projects
 
 ## Installation
 
-This package does not install `eslint`, `prettier`, or `eslint-plugin-prettier`, so you need to
-install them manually.
+This package does not install `eslint`, so you need to install them manually.
 
 ```shell
-yarn add -D @react-hookz/eslint-config eslint eslint-plugin-prettier prettier
+yarn add -D @react-hookz/eslint-config eslint
 ```
 
 ## Usage

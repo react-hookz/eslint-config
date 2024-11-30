@@ -1,4 +1,4 @@
-import { adjustESLintConfigFiles } from './base.js';
+import {adjustESLintConfigFiles} from './base.js';
 import typescriptConfig from './typescript.js';
 
 /** @var {Linter.Config[]} */

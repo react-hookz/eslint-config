@@ -1,5 +1,5 @@
 import jest from 'eslint-plugin-jest';
-import { adjustESLintConfigFiles } from './base.js';
+import {adjustESLintConfigFiles} from './base.js';
 
 /** @type {Linter.Config[]} */
 const jestConfig = [jest.configs['flat/recommended']];

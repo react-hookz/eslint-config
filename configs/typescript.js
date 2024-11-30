@@ -1,18 +1,44 @@
 import xoTypescript from 'eslint-config-xo-typescript';
 import importPlugin from 'eslint-plugin-import';
-import eslintPluginPrettierRecommended from 'eslint-plugin-prettier/recommended';
-import { adjustESLintConfigFiles, importConfig } from './base.js';
+import {adjustESLintConfigFiles, importConfig} from './base.js';
 
 /** @var {Linter.Config[]} */
 const typescriptConfig = [
-	...importConfig,
 	importPlugin.flatConfigs.typescript,
+	...importConfig,
 
 	...xoTypescript,
 	{
 		rules: {
 			'import/consistent-type-specifier-style': ['error', 'prefer-inline'],
 
+			'@typescript-eslint/no-restricted-types': [
+				'error',
+				{
+					types: {
+						object: {
+							message: 'The `object` type is hard to use. Use `Record<string, unknown>` instead. See: https://github.com/typescript-eslint/typescript-eslint/pull/848',
+							fixWith: 'Record<string, unknown>',
+						},
+						Buffer: {
+							message: 'Use Uint8Array instead. See: https://sindresorhus.com/blog/goodbye-nodejs-buffer',
+							suggest: [
+								'Uint8Array',
+							],
+						},
+						'[]': 'Don\'t use the empty array type `[]`. It only allows empty arrays. Use `SomeType[]` instead.',
+						'[[]]': 'Don\'t use `[[]]`. It only allows an array with a single element which is an empty array. Use `SomeType[][]` instead.',
+						'[[[]]]': 'Don\'t use `[[[]]]`. Use `SomeType[][][]` instead.',
+						'[[[[]]]]': 'ur drunk 🤡',
+						'[[[[[]]]]]': '🦄💥',
+					},
+				},
+			],
+
+			'@typescript-eslint/switch-exhaustiveness-check': ['error', {
+				allowDefaultCaseForExhaustiveSwitch: true,
+				considerDefaultExhaustiveForUnions: true,
+			}],
 			'@typescript-eslint/no-empty-function': 'off',
 			'@typescript-eslint/promise-function-async': 'off',
 			'@typescript-eslint/naming-convention': [
@@ -20,7 +46,6 @@ const typescriptConfig = [
 				{
 					selector: 'variable',
 					modifiers: ['destructured'],
-					// eslint-disable-next-line unicorn/no-null
 					format: null,
 				},
 				{
@@ -34,7 +59,6 @@ const typescriptConfig = [
 						'accessor',
 						'enumMember',
 					],
-					// eslint-disable-next-line unicorn/no-null
 					format: null,
 					modifiers: ['requiresQuotes'],
 				},
@@ -53,19 +77,14 @@ const typescriptConfig = [
 				},
 			],
 
+			// annoying if you need to use logical rules
+			'@typescript-eslint/prefer-nullish-coalescing': 'off',
+
 			// annoying rules
 			'default-case': 'off',
 			'capitalized-comments': 'off',
 			'function-call-argument-newline': 'off',
-
-			// conflicts with prettier
-			'@stylistic/object-curly-spacing': 'off',
-			'@stylistic/quotes': 'off',
-			'@stylistic/arrow-parens': 'off',
-			'@stylistic/comma-dangle': 'off',
 		},
 	},
-
-	eslintPluginPrettierRecommended,
 ];
-export default adjustESLintConfigFiles(typescriptConfig, ['**/*.{ts,mts,ctx,tsx}']);
+export default adjustESLintConfigFiles(typescriptConfig, ['**/*.{ts,mts,cts,tsx}']);
