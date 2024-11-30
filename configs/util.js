@@ -19,14 +19,19 @@ export function setFilesIfUndef(configs, files) {
  *
  * @param {Linter.Config[]} configs
  * @param {string[]} except
+ * @param {RegExp[]} exceptRx
  * @return {Linter.RulesRecord}
  */
-export function disableAllRules(configs, except = []) {
+export function disableAllRules(configs, except = [], exceptRx = []) {
 	const rules = {};
 
 	for (const config of configs) {
 		for (const rule in config.rules ?? {}) {
 			if (except.includes(rule)) {
+				continue;
+			}
+
+			if (exceptRx.some(rx => rx.test(rule))) {
 				continue;
 			}
 
