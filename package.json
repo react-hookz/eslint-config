@@ -25,9 +25,7 @@
 	],
 	"peerDependencies": {
 		"eslint": "^9.15.0",
-		"eslint-plugin-prettier": "^5.2.1",
 		"jest": "*",
-		"prettier": "^3.4.1",
 		"typescript": "^5.0.0",
 		"vitest": "*"
 	},
@@ -50,7 +48,6 @@
 		"eslint-config-prettier": "^9.1.0",
 		"eslint-config-xo": "^0.46.0",
 		"eslint-config-xo-typescript": "^7.0.0",
-		"eslint-import-resolver-typescript": "^3.6.3",
 		"eslint-plugin-import": "^2.31.0",
 		"eslint-plugin-jest": "^28.9.0",
 		"eslint-plugin-mdx": "^3.1.5",
@@ -66,14 +63,13 @@
 		"@commitlint/config-conventional": "^19.6.0",
 		"@react-hookz/eslint-formatter-gha": "^3.0.0",
 		"@semantic-release/exec": "^6.0.3",
+		"@stylistic/eslint-plugin": "^2.11.0",
 		"@types/node": "^22.10.0",
 		"@typescript-eslint/utils": "^8.16.0",
 		"eslint": "^9.15.0",
-		"eslint-plugin-prettier": "^5.2.1",
 		"husky": "^9.1.7",
 		"lint-staged": "^15.2.10",
 		"pinst": "^3.0.0",
-		"prettier": "^3.4.1",
 		"semantic-release": "^24.2.0",
 		"typescript": "^5.7.2"
 	},

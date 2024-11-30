@@ -1,5 +1,4 @@
 import * as mdx from 'eslint-plugin-mdx';
-import eslintPluginPrettierRecommended from 'eslint-plugin-prettier/recommended';
 
 /** @type {Linter.Config[]} */
 const mdConfig = [
@@ -22,22 +21,6 @@ const mdConfig = [
 			'prefer-const': 'error',
 			'import/no-unresolved': 'off',
 			'import/no-anonymous-default-export': 'off',
-		},
-	},
-	{
-		...eslintPluginPrettierRecommended,
-		files: ['**/*.{md,mdx}'],
-	},
-	{
-		files: ['**/*.md'],
-		rules: {
-			'prettier/prettier': ['error', { parser: 'markdown' }],
-		},
-	},
-	{
-		files: ['**/*.mdx'],
-		rules: {
-			'prettier/prettier': ['error', { parser: 'mdx' }],
 		},
 	},
 ];

@@ -1,10 +1,11 @@
 import js from '@eslint/js';
+import stylistic from '@stylistic/eslint-plugin';
 import xo from 'eslint-config-xo';
 import importPlugin from 'eslint-plugin-import';
 import eslintPluginNoUseExtendNative from 'eslint-plugin-no-use-extend-native';
-import eslintPluginPrettierRecommended from 'eslint-plugin-prettier/recommended';
 import pluginPromise from 'eslint-plugin-promise';
 import eslintPluginUnicorn from 'eslint-plugin-unicorn';
+import {setFilesIfUndef} from './util.js';
 
 /** @typedef {import('eslint').Linter} Linter */
 
@@ -100,17 +101,6 @@ export const importConfig = [
 		},
 	},
 ];
-
-/**
- * Set configs file patters in case config does not have one.
- *
- * @param {Linter.Config[]} configs
- * @param {string[]} files
- * @return {Linter.Config[]}
- */
-export function adjustESLintConfigFiles(configs, files) {
-	return configs.map((cfg) => ({ files, ...cfg }));
-}
 
 /** @type {Linter.Config[]} */
 const baseConfig = [
@@ -252,10 +242,14 @@ const baseConfig = [
 			// https://github.com/sindresorhus/eslint-plugin-unicorn/search?q=consistent-destructuring+is:issue&state=open&type=issues
 			'unicorn/consistent-destructuring': 'off',
 
-			'unicorn/prefer-ternary': ['error', 'only-single-line'],
-
 			// It is up to app to decide file name casing.
 			'unicorn/filename-case': 'off',
+
+			// null is completely okay IMO
+			'unicorn/no-null': 'off',
+
+			// `if` statement should NOT be replaced by a ternary expression
+			'unicorn/prefer-ternary': 'off',
 		},
 	},
 
@@ -266,15 +260,30 @@ const baseConfig = [
 			'default-case': 'off',
 			'capitalized-comments': 'off',
 			'function-call-argument-newline': 'off',
-
-			// conflicts with prettier
-			'@stylistic/object-curly-spacing': 'off',
-			'@stylistic/quotes': 'off',
-			'@stylistic/arrow-parens': 'off',
-			'@stylistic/comma-dangle': 'off',
 		},
 	},
-	eslintPluginPrettierRecommended,
+
+	{
+		plugins: {
+			'@stylistic': stylistic,
+		},
+		rules: {
+			'@stylistic/indent': ['error', 'tab', {tabLength: 2}],
+			'@stylistic/max-len': [
+				'warn',
+				{
+					code: 120,
+					tabWidth: 2,
+					ignoreComments: true,
+					ignoreTrailingComments: true,
+					ignoreUrls: true,
+					ignoreStrings: true,
+					ignoreTemplateLiterals: true,
+					ignoreRegExpLiterals: true,
+				},
+			],
+		},
+	},
 ];
 
-export default adjustESLintConfigFiles(baseConfig, ['**/*.{js,mjs,cjs,jsx,ts,mts,cts,tsx}']);
+export default setFilesIfUndef(baseConfig, ['**/*.{js,mjs,cjs,jsx,ts,mts,cts,tsx}']);
