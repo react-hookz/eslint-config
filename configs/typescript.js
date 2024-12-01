@@ -85,6 +85,10 @@ const typescriptConfig = [
 			'default-case': 'off',
 			'capitalized-comments': 'off',
 			'function-call-argument-newline': 'off',
+
+			'@typescript-eslint/only-throw-error': ['error', {
+				allowThrowingUnknown: true,
+			}],
 		},
 	},
 
