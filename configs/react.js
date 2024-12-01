@@ -5,6 +5,7 @@ import {setFilesIfUndef} from './util.js';
 /** @var {Linter.Config[]} */
 const reactConfig = [
 	pluginReact.configs.flat.recommended,
+	pluginReact.configs.flat['jsx-runtime'],
 	{
 		plugins: {
 			'react-hooks': {
@@ -17,9 +18,13 @@ const reactConfig = [
 		},
 	},
 	{
+		settings: {
+			react: {
+				version: 'detect',
+			},
+		},
 		rules: {
 			'react/button-has-type': 'error',
-			'react/jsx-child-element-spacing': 'error',
 			'react/default-props-match-prop-types': 'error',
 			'react/function-component-definition': [
 				'error',
@@ -75,55 +80,12 @@ const reactConfig = [
 			],
 			'react/void-dom-elements-no-children': 'error',
 			'react/jsx-boolean-value': 'error',
-			'react/jsx-closing-bracket-location': [
-				'error',
-				{
-					nonEmpty: 'tag-aligned',
-					selfClosing: false,
-				},
-			],
-			'react/jsx-closing-tag-location': 'error',
-			'react/jsx-curly-newline': [
-				'error',
-				{
-					multiline: 'consistent',
-					singleline: 'forbid',
-				},
-			],
-			'react/jsx-curly-spacing': [
-				'error',
-				'never',
-			],
-			'react/jsx-equals-spacing': [
-				'error',
-				'never',
-			],
-			'react/jsx-first-prop-new-line': 'error',
-			'react/jsx-indent': [
-				'error',
-				'tab',
-				{
-					checkAttributes: true,
-					indentLogicalExpressions: true,
-				},
-			],
-			'react/jsx-indent-props': [
-				'error',
-				'tab',
-			],
 			'react/jsx-key': [
 				'error',
 				{
 					checkFragmentShorthand: true,
 					checkKeyMustBeforeSpread: true,
 					warnOnDuplicates: true,
-				},
-			],
-			'react/jsx-max-props-per-line': [
-				'error',
-				{
-					maximum: 3,
-					when: 'multiline',
 				},
 			],
 			'react/jsx-no-bind': [
@@ -152,14 +114,6 @@ const reactConfig = [
 			'react/jsx-no-useless-fragment': 'error',
 			// Disabled for now as it produces too many errors
 			// 'react/jsx-one-expression-per-line': ['error', {allow: 'single-child'}],
-			'react/jsx-curly-brace-presence': [
-				'error',
-				{
-					props: 'never',
-					children: 'never',
-					propElementValues: 'always',
-				},
-			],
 			'react/jsx-fragments': [
 				'error',
 				'syntax',
@@ -175,29 +129,8 @@ const reactConfig = [
 					reservedFirst: true,
 				},
 			],
-			'react/jsx-tag-spacing': [
-				'error',
-				{
-					closingSlash: 'never',
-					beforeSelfClosing: 'never',
-					afterOpening: 'never',
-					beforeClosing: 'never',
-				},
-			],
 			'react/jsx-uses-react': 'error',
 			'react/jsx-uses-vars': 'error',
-			'react/jsx-wrap-multilines': [
-				'error',
-				{
-					declaration: 'parens-new-line',
-					assignment: 'parens-new-line',
-					return: 'parens-new-line',
-					arrow: 'parens-new-line',
-					condition: 'ignore',
-					logical: 'ignore',
-					prop: 'ignore',
-				},
-			],
 
 			'react-hooks/rules-of-hooks': 'error',
 			'react-hooks/exhaustive-deps': 'warn',
@@ -214,6 +147,66 @@ const reactConfig = [
 			// Not so convenient in significant amount of cases to
 			// prefix boolean prop with `is` or `has`.
 			'react/boolean-prop-naming': 'off',
+
+			// name is taken from constant name or function name
+			'react/display-name': 'off',
+
+			// controlled by stylistic
+			'react/jsx-indent': 'off',
+			'react/jsx-closing-bracket-location': 'off',
+			'react/jsx-closing-tag-location': 'off',
+			'react/jsx-curly-brace-presence': 'off',
+			'react/jsx-curly-newline': 'off',
+			'react/jsx-curly-spacing': 'off',
+			'react/jsx-equals-spacing': 'off',
+			'react/jsx-first-prop-new-line': 'off',
+			'react/jsx-function-call-newline': 'off',
+			'react/jsx-indent-props': 'off',
+			'react/jsx-max-props-per-line': 'off',
+			'react/jsx-one-expression-per-line': 'off',
+			'react/jsx-quotes': 'off',
+			'react/jsx-tag-spacing': 'off',
+			'react/jsx-wrap-multilines': 'off',
+			'react/jsx-child-element-spacing': 'off',
+
+			'@stylistic/jsx-indent': ['error', 'tab', {
+				indentLogicalExpressions: true,
+				checkAttributes: false,
+			}],
+			'@stylistic/jsx-closing-bracket-location': ['error', 'after-props'],
+			'@stylistic/jsx-closing-tag-location': 'error',
+			'@stylistic/jsx-curly-brace-presence': ['error', {propElementValues: 'always'}],
+			'@stylistic/jsx-curly-newline': 'error',
+			'@stylistic/jsx-curly-spacing': ['error', 'never'],
+			'@stylistic/jsx-equals-spacing': 'error',
+			'@stylistic/jsx-first-prop-new-line': 'error',
+			'@stylistic/jsx-function-call-newline': ['error', 'multiline'],
+			'@stylistic/jsx-indent-props': ['error', 'tab'],
+			'@stylistic/jsx-max-props-per-line': ['error', {maximum: 1, when: 'multiline'}],
+			'@stylistic/jsx-one-expression-per-line': ['error', {allow: 'non-jsx'}],
+			'@stylistic/jsx-quotes': 'error',
+			'@stylistic/jsx-tag-spacing': [
+				'error',
+				{
+					afterOpening: 'never',
+					beforeClosing: 'never',
+					beforeSelfClosing: 'always',
+					closingSlash: 'never',
+				},
+			],
+			'@stylistic/jsx-wrap-multilines': [
+				'error',
+				{
+					arrow: 'parens-new-line',
+					assignment: 'parens-new-line',
+					condition: 'parens-new-line',
+					declaration: 'parens-new-line',
+					logical: 'parens-new-line',
+					prop: 'parens-new-line',
+					propertyValue: 'parens-new-line',
+					return: 'parens-new-line',
+				},
+			],
 		},
 	},
 ];
