@@ -104,6 +104,52 @@ export const importConfig = [
 ];
 
 /** @type {Linter.Config[]} */
+export const stylisticConfig = [
+	{
+		plugins: {
+			'@stylistic': stylistic,
+		},
+		rules: {
+			'@stylistic/max-len': [
+				'warn',
+				{
+					code: 120,
+					tabWidth: 2,
+					ignoreComments: true,
+					ignoreTrailingComments: true,
+					ignoreUrls: true,
+					ignoreStrings: true,
+					ignoreTemplateLiterals: true,
+					ignoreRegExpLiterals: true,
+				},
+			],
+			'@stylistic/indent': ['error', 'tab', {
+				SwitchCase: 1,
+				tabLength: 2,
+				flatTernaryExpressions: true,
+				offsetTernaryExpressions: true,
+			}],
+			'@stylistic/indent-binary-ops': ['error', 'tab'],
+
+			'@stylistic/quotes': ['error', 'single', {
+				avoidEscape: true,
+			}],
+			'@stylistic/function-paren-newline': ['error', 'consistent'],
+			'@stylistic/arrow-parens': ['error', 'as-needed', {requireForBlockBody: true}],
+			'@stylistic/operator-linebreak': ['error', 'after'],
+			'@stylistic/multiline-ternary': ['error', 'always-multiline'],
+			'@stylistic/no-mixed-spaces-and-tabs': ['error', 'smart-tabs'],
+			'@stylistic/object-curly-newline': ['error', {
+				ObjectExpression: {multiline: true, consistent: true},
+				ObjectPattern: {multiline: true, consistent: true},
+				ImportDeclaration: {multiline: true, consistent: true},
+				ExportDeclaration: {multiline: true, consistent: true},
+			}],
+		},
+	},
+];
+
+/** @type {Linter.Config[]} */
 const baseConfig = [
 	js.configs.recommended,
 
@@ -264,48 +310,7 @@ const baseConfig = [
 		},
 	},
 
-	{
-		plugins: {
-			'@stylistic': stylistic,
-		},
-		rules: {
-			'@stylistic/max-len': [
-				'warn',
-				{
-					code: 120,
-					tabWidth: 2,
-					ignoreComments: true,
-					ignoreTrailingComments: true,
-					ignoreUrls: true,
-					ignoreStrings: true,
-					ignoreTemplateLiterals: true,
-					ignoreRegExpLiterals: true,
-				},
-			],
-			'@stylistic/indent': ['error', 'tab', {
-				SwitchCase: 1,
-				tabLength: 2,
-				flatTernaryExpressions: true,
-				offsetTernaryExpressions: true,
-			}],
-			'@stylistic/indent-binary-ops': ['error', 'tab'],
-
-			'@stylistic/quotes': ['error', 'single', {
-				avoidEscape: true,
-			}],
-			'@stylistic/function-paren-newline': ['error', 'consistent'],
-			'@stylistic/arrow-parens': ['error', 'as-needed', {requireForBlockBody: true}],
-			'@stylistic/operator-linebreak': ['error', 'after'],
-			'@stylistic/multiline-ternary': ['error', 'always-multiline'],
-			'@stylistic/no-mixed-spaces-and-tabs': ['error', 'smart-tabs'],
-			'@stylistic/object-curly-newline': ['error', {
-				ObjectExpression: {multiline: true, consistent: true},
-				ObjectPattern: {multiline: true, consistent: true},
-				ImportDeclaration: {multiline: true, consistent: true},
-				ExportDeclaration: {multiline: true, consistent: true},
-			}],
-		},
-	},
+	...stylisticConfig,
 ];
 
 export default setFilesIfUndef(baseConfig, ['**/*.{js,mjs,cjs,jsx,ts,mts,cts,tsx}']);

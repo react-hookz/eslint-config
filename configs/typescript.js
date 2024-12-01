@@ -1,6 +1,6 @@
 import xoTypescript from 'eslint-config-xo-typescript';
 import importPlugin from 'eslint-plugin-import';
-import {importConfig} from './base.js';
+import {importConfig, stylisticConfig} from './base.js';
 import {setFilesIfUndef} from './util.js';
 
 /** @var {Linter.Config[]} */
@@ -87,5 +87,7 @@ const typescriptConfig = [
 			'function-call-argument-newline': 'off',
 		},
 	},
+
+	...stylisticConfig,
 ];
 export default setFilesIfUndef(typescriptConfig, ['**/*.{ts,mts,cts,tsx}']);
