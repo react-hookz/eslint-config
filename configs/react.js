@@ -169,10 +169,7 @@ const reactConfig = [
 			'react/jsx-wrap-multilines': 'off',
 			'react/jsx-child-element-spacing': 'off',
 
-			'@stylistic/jsx-indent': ['error', 'tab', {
-				indentLogicalExpressions: true,
-				checkAttributes: false,
-			}],
+			'@stylistic/jsx-indent': 'off',
 			'@stylistic/jsx-closing-bracket-location': ['error', 'after-props'],
 			'@stylistic/jsx-closing-tag-location': 'error',
 			'@stylistic/jsx-curly-brace-presence': ['error', {propElementValues: 'always'}],
