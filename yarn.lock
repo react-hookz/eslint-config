@@ -902,7 +902,7 @@ __metadata:
     "@commitlint/cli": "npm:^19.6.0"
     "@commitlint/config-conventional": "npm:^19.6.0"
     "@eslint/js": "npm:^9.15.0"
-    "@react-hookz/eslint-formatter-gha": "npm:^3.0.0"
+    "@react-hookz/eslint-formatter-gha": "npm:^3.0.1"
     "@semantic-release/exec": "npm:^6.0.3"
     "@stylistic/eslint-plugin": "npm:^2.11.0"
     "@types/node": "npm:^22.10.0"
@@ -943,12 +943,12 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@react-hookz/eslint-formatter-gha@npm:^3.0.0":
-  version: 3.0.0
-  resolution: "@react-hookz/eslint-formatter-gha@npm:3.0.0"
+"@react-hookz/eslint-formatter-gha@npm:^3.0.1":
+  version: 3.0.1
+  resolution: "@react-hookz/eslint-formatter-gha@npm:3.0.1"
   dependencies:
     "@actions/core": "npm:^1.11.1"
-  checksum: 10c0/704d7008369a78fd86a66437bb825bc1ee256a5a6e43474eef77cca807a7e9bf213ca64f9686e959c740452de90c945853094356c5fa1753bd57a1335bf4775f
+  checksum: 10c0/2b31c523b4725683299d85f7bc6149a1ebff5afeeb193d5e9489416452b126c4069afda7bf3d73ffb86483007236e5c5c10337495e94c79cc1e78d94c958a9f2
   languageName: node
   linkType: hard
 
