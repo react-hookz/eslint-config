@@ -44,7 +44,7 @@
 		"@eslint/js": "^9.17.0",
 		"@typescript-eslint/eslint-plugin": "^8.19.0",
 		"@typescript-eslint/parser": "^8.19.0",
-		"@vitest/eslint-plugin": "^1.1.22",
+		"@vitest/eslint-plugin": "^1.1.23",
 		"eslint-config-prettier": "^9.1.0",
 		"eslint-config-xo": "^0.46.0",
 		"eslint-config-xo-typescript": "^7.0.0",
