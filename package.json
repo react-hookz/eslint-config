@@ -60,7 +60,7 @@
 	},
 	"devDependencies": {
 		"@commitlint/cli": "^19.7.1",
-		"@commitlint/config-conventional": "^19.6.0",
+		"@commitlint/config-conventional": "^19.7.1",
 		"@react-hookz/eslint-formatter-gha": "^3.0.3",
 		"@semantic-release/exec": "^7.0.2",
 		"@stylistic/eslint-plugin": "^2.11.0",
