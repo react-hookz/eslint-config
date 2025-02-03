@@ -906,7 +906,7 @@ __metadata:
     "@commitlint/config-conventional": "npm:^19.6.0"
     "@eslint/js": "npm:^9.19.0"
     "@react-hookz/eslint-formatter-gha": "npm:^3.0.3"
-    "@semantic-release/exec": "npm:^6.0.3"
+    "@semantic-release/exec": "npm:^7.0.2"
     "@stylistic/eslint-plugin": "npm:^2.11.0"
     "@types/node": "npm:^22.12.0"
     "@typescript-eslint/eslint-plugin": "npm:^8.22.0"
@@ -987,13 +987,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@semantic-release/error@npm:^3.0.0":
-  version: 3.0.0
-  resolution: "@semantic-release/error@npm:3.0.0"
-  checksum: 10c0/51f06d11186a6efc543b44996ca1c368a77c6ed18dd823f0362188c37b7ef32f3580bd17654f594e6a72b931ebe69b44bbcb1ee16c755a1d3e44dcb652b47275
-  languageName: node
-  linkType: hard
-
 "@semantic-release/error@npm:^4.0.0":
   version: 4.0.0
   resolution: "@semantic-release/error@npm:4.0.0"
@@ -1001,19 +994,19 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@semantic-release/exec@npm:^6.0.3":
-  version: 6.0.3
-  resolution: "@semantic-release/exec@npm:6.0.3"
+"@semantic-release/exec@npm:^7.0.2":
+  version: 7.0.2
+  resolution: "@semantic-release/exec@npm:7.0.2"
   dependencies:
-    "@semantic-release/error": "npm:^3.0.0"
+    "@semantic-release/error": "npm:^4.0.0"
     aggregate-error: "npm:^3.0.0"
     debug: "npm:^4.0.0"
     execa: "npm:^5.0.0"
-    lodash: "npm:^4.17.4"
-    parse-json: "npm:^5.0.0"
+    lodash-es: "npm:^4.17.21"
+    parse-json: "npm:^8.0.0"
   peerDependencies:
-    semantic-release: ">=18.0.0"
-  checksum: 10c0/87c1f5dcd96e8b51cfa084ff2fd570fa1e2b6368064fba54403797636279e1159b62c199b3e8219d31189acfe8aa6f1b596f6cda6508fd3e1a7e5739c86a1a65
+    semantic-release: ">=24.1.0"
+  checksum: 10c0/8c71eeeae6374b85abf2d08e952afe9c91f7670ab34c8d5ca7bcb8387b9e251dd9669b18d2795aa91d1c62421f5403228d106554f8f1a3fc606399f35656d730
   languageName: node
   linkType: hard
 
@@ -5792,13 +5785,6 @@ __metadata:
   version: 4.3.1
   resolution: "lodash.upperfirst@npm:4.3.1"
   checksum: 10c0/435625da4b3ee74e7a1367a780d9107ab0b13ef4359fc074b2a1a40458eb8d91b655af62f6795b7138d493303a98c0285340160341561d6896e4947e077fa975
-  languageName: node
-  linkType: hard
-
-"lodash@npm:^4.17.4":
-  version: 4.17.21
-  resolution: "lodash@npm:4.17.21"
-  checksum: 10c0/d8cbea072bb08655bb4c989da418994b073a608dffa608b09ac04b43a791b12aeae7cd7ad919aa4c925f33b48490b5cfe6c1f71d827956071dae2e7bb3a6b74c
   languageName: node
   linkType: hard
 
