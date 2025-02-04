@@ -907,7 +907,7 @@ __metadata:
     "@eslint/js": "npm:^9.19.0"
     "@react-hookz/eslint-formatter-gha": "npm:^3.0.3"
     "@semantic-release/exec": "npm:^7.0.3"
-    "@stylistic/eslint-plugin": "npm:^2.11.0"
+    "@stylistic/eslint-plugin": "npm:^3.0.1"
     "@types/node": "npm:^22.13.1"
     "@typescript-eslint/eslint-plugin": "npm:^8.23.0"
     "@typescript-eslint/parser": "npm:^8.23.0"
@@ -1158,7 +1158,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@stylistic/eslint-plugin@npm:^2.11.0, @stylistic/eslint-plugin@npm:^2.6.1":
+"@stylistic/eslint-plugin@npm:^2.6.1":
   version: 2.11.0
   resolution: "@stylistic/eslint-plugin@npm:2.11.0"
   dependencies:
@@ -1170,6 +1170,21 @@ __metadata:
   peerDependencies:
     eslint: ">=8.40.0"
   checksum: 10c0/6ca19b6656be5ed657cf4d1920602fb27144dc5d51ba188e0bdcb2a4e0b740d4fdb27052fc268d164fa1269c972aeab15541c9e15b3ff4b7884ecae47f18ff67
+  languageName: node
+  linkType: hard
+
+"@stylistic/eslint-plugin@npm:^3.0.1":
+  version: 3.0.1
+  resolution: "@stylistic/eslint-plugin@npm:3.0.1"
+  dependencies:
+    "@typescript-eslint/utils": "npm:^8.13.0"
+    eslint-visitor-keys: "npm:^4.2.0"
+    espree: "npm:^10.3.0"
+    estraverse: "npm:^5.3.0"
+    picomatch: "npm:^4.0.2"
+  peerDependencies:
+    eslint: ">=8.40.0"
+  checksum: 10c0/6eda8f5f463cc1fca30aec9e0311fd69a1ca84904856e0a3f0108bff411448592a35696dc2b5060fffe0d9c85ce67026cb479d6435bcdb083a29c9d9cb9ebb18
   languageName: node
   linkType: hard
 
