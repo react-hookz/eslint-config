@@ -1,3 +1,7 @@
+> [!CAUTION]
+> __PACKAGE IS DEPRECATED AND WILL BE DETED SOON__  
+> USE [@ver0/eslint-config](https://github.com/ver0-project/eslint-config) instead
+
 <div align="center">
 
 # @react-hookz/eslint-config
