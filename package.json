@@ -59,7 +59,7 @@
 		"eslint-plugin-unicorn": "^57.0.0"
 	},
 	"devDependencies": {
-		"@commitlint/cli": "^19.7.1",
+		"@commitlint/cli": "^19.8.0",
 		"@commitlint/config-conventional": "^19.7.1",
 		"@react-hookz/eslint-formatter-gha": "^3.0.4",
 		"@semantic-release/exec": "^7.0.3",
